@@ -1,1 +1,0 @@
-# Variables locales que no quiero incorporar en main.py

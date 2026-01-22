@@ -19,7 +19,8 @@ def menu_principal():
         if opcion == 1:
             decoradores.cambio_de_pagina()
             print("\n--- LISTA DE PUERTOS ACTUALES ---")
-            # Recorremos la lista que importamos
+            # Recorremos la lista que importamos, luego sera una lista que leeremos con un 
+            # Archivo JSON
 
             if not puertos_registrados:
                 print("No hay puertos registrados.")
@@ -34,6 +35,7 @@ def menu_principal():
         elif opcion == 2:
             # Luego me metere en la logica de agregar puertos
             decoradores.cambio_de_pagina()
+
             pass
         elif opcion == 3:
             # Luego me metere en la logica de eliminar puertos
