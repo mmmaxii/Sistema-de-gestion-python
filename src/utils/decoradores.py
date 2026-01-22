@@ -1,15 +1,17 @@
 # Incorporar cosas como medir tiempos de ejecucion, tambien algo que confirme la acción.
-
 import time
-from functools import wraps
 
-def despedida(func):
+def despedida_programa():
     """
     Decorador que se despide del usuario y espera 2 segundos antes de continuar.
     """
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        print("Saliendo... ¡Hasta pronto!")
-        time.sleep(2)
-        return func(*args, **kwargs)
-    return wrapper
+    print("Saliendo... ¡Hasta pronto!")
+    time.sleep(1)
+            
+
+def cambio_de_pagina():
+    """
+    Solo printea que se cambia de pagina y espera dos segundos.
+    """
+    print("Cambiando de pagina...")
+    time.sleep(1)
