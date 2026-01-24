@@ -1523,7 +1523,877 @@
                 "id": "CO003",
                 "tipo": "OpenTop",
                 "peso_maximo": 100000,
-                "carga": []
+                "carga": [
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Router Starlink V2",
+                        "peso": 4.2,
+                        "precio": 600,
+                        "marca": "SpaceX",
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Clase C",
+                        "peso": 1650,
+                        "precio": 48000,
+                        "marca": "Mercedes-Benz",
+                        "año": 2023,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Forester",
+                        "peso": 1680,
+                        "precio": 33000,
+                        "marca": "Subaru",
+                        "año": 2023,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Limón Sutil",
+                        "peso": 0.1,
+                        "precio": 0.25,
+                        "requiere_frio": false,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "iPad Pro 12.9",
+                        "peso": 0.68,
+                        "precio": 1100,
+                        "marca": "Apple",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Silverado 1500",
+                        "peso": 2400,
+                        "precio": 55000,
+                        "marca": "Chevrolet",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Ninja 400",
+                        "peso": 168,
+                        "precio": 6000,
+                        "marca": "Kawasaki",
+                        "año": 2023,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Arroz Grano Largo",
+                        "peso": 1.0,
+                        "precio": 1.5,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Proyector Epson 4K",
+                        "peso": 4.1,
+                        "precio": 900,
+                        "marca": "Epson",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Hilux",
+                        "peso": 2100,
+                        "precio": 40000,
+                        "marca": "Toyota",
+                        "año": 2023,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Tarjeta Gráfica RTX 4090",
+                        "peso": 2.2,
+                        "precio": 1600,
+                        "marca": "NVIDIA",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Sony Bravia OLED 65'",
+                        "peso": 24.0,
+                        "precio": 2200,
+                        "marca": "Sony",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Cereal de Maíz",
+                        "peso": 0.5,
+                        "precio": 4.0,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Taycan",
+                        "peso": 2300,
+                        "precio": 100000,
+                        "marca": "Porsche",
+                        "año": 2023,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Duke 390",
+                        "peso": 150,
+                        "precio": 6500,
+                        "marca": "KTM",
+                        "año": 2024,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Amarok",
+                        "peso": 2250,
+                        "precio": 42000,
+                        "marca": "Volkswagen",
+                        "año": 2022,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Apple Watch Ultra 2",
+                        "peso": 0.06,
+                        "precio": 800,
+                        "marca": "Apple",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Tucson",
+                        "peso": 1500,
+                        "precio": 29000,
+                        "marca": "Hyundai",
+                        "año": 2024,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Galaxy Watch 6",
+                        "peso": 0.05,
+                        "precio": 350,
+                        "marca": "Samsung",
+                        "cantidad": 4
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Elantra",
+                        "peso": 1290,
+                        "precio": 20500,
+                        "marca": "Hyundai",
+                        "año": 2024,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Teclado Mecánico K95",
+                        "peso": 1.3,
+                        "precio": 200,
+                        "marca": "Corsair",
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Sal de Mar",
+                        "peso": 0.5,
+                        "precio": 0.9,
+                        "requiere_frio": false,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Termostato Nest",
+                        "peso": 0.3,
+                        "precio": 130,
+                        "marca": "Google",
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Vespa Primavera",
+                        "peso": 120,
+                        "precio": 4500,
+                        "marca": "Piaggio",
+                        "año": 2024,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Sentra",
+                        "peso": 1380,
+                        "precio": 21000,
+                        "marca": "Nissan",
+                        "año": 2022,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "911 Carrera",
+                        "peso": 1500,
+                        "precio": 120000,
+                        "marca": "Porsche",
+                        "año": 2024,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Kindle Paperwhite",
+                        "peso": 0.2,
+                        "precio": 150,
+                        "marca": "Amazon",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Azúcar Blanca",
+                        "peso": 1.0,
+                        "precio": 1.2,
+                        "requiere_frio": false,
+                        "cantidad": 4
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "L200",
+                        "peso": 1950,
+                        "precio": 36000,
+                        "marca": "Mitsubishi",
+                        "año": 2023,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "GoPro Hero 12",
+                        "peso": 0.15,
+                        "precio": 400,
+                        "marca": "GoPro",
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Lavadora Frontal AI",
+                        "peso": 75.0,
+                        "precio": 900,
+                        "marca": "LG",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Qashqai",
+                        "peso": 1450,
+                        "precio": 27000,
+                        "marca": "Nissan",
+                        "año": 2024,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Civic",
+                        "peso": 1300,
+                        "precio": 24000,
+                        "marca": "Honda",
+                        "año": 2023,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "LG C3 OLED 55'",
+                        "peso": 18.0,
+                        "precio": 1500,
+                        "marca": "LG",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Café Molido",
+                        "peso": 0.25,
+                        "precio": 6.0,
+                        "requiere_frio": false,
+                        "cantidad": 4
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Tomate Larga Vida",
+                        "peso": 0.15,
+                        "precio": 0.4,
+                        "requiere_frio": false,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "BT-50",
+                        "peso": 2000,
+                        "precio": 37000,
+                        "marca": "Mazda",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Dell XPS 13",
+                        "peso": 1.2,
+                        "precio": 1200,
+                        "marca": "Dell",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Golf GTI",
+                        "peso": 1400,
+                        "precio": 32000,
+                        "marca": "Volkswagen",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Onix",
+                        "peso": 1050,
+                        "precio": 15000,
+                        "marca": "Chevrolet",
+                        "año": 2024,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Aguacate Hass",
+                        "peso": 0.25,
+                        "precio": 1.8,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "PlayStation 5 Slim",
+                        "peso": 3.2,
+                        "precio": 500,
+                        "marca": "Sony",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Piña Miel",
+                        "peso": 1.5,
+                        "precio": 3.5,
+                        "requiere_frio": false,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Purificador de Aire",
+                        "peso": 4.8,
+                        "precio": 250,
+                        "marca": "Xiaomi",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Rio",
+                        "peso": 1100,
+                        "precio": 16000,
+                        "marca": "Kia",
+                        "año": 2023,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Harina de Trigo",
+                        "peso": 1.0,
+                        "precio": 1.1,
+                        "requiere_frio": false,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Silla Gamer Titan",
+                        "peso": 28.0,
+                        "precio": 450,
+                        "marca": "Secretlab",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Plátano Cavendish",
+                        "peso": 0.18,
+                        "precio": 0.3,
+                        "requiere_frio": false,
+                        "cantidad": 6
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Explorer",
+                        "peso": 2020,
+                        "precio": 45000,
+                        "marca": "Ford",
+                        "año": 2023,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Refrigerador Smart Hub",
+                        "peso": 110.0,
+                        "precio": 2500,
+                        "marca": "Samsung",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "iMac 24",
+                        "peso": 4.5,
+                        "precio": 1500,
+                        "marca": "Apple",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Ranger",
+                        "peso": 2200,
+                        "precio": 39000,
+                        "marca": "Ford",
+                        "año": 2024,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Nintendo Switch OLED",
+                        "peso": 0.42,
+                        "precio": 350,
+                        "marca": "Nintendo",
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "CX-5",
+                        "peso": 1650,
+                        "precio": 32000,
+                        "marca": "Mazda",
+                        "año": 2022,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Galletas de Soda",
+                        "peso": 0.3,
+                        "precio": 1.5,
+                        "requiere_frio": false,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Microsoft Surface Pro",
+                        "peso": 0.9,
+                        "precio": 1000,
+                        "marca": "Microsoft",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "CBR600RR",
+                        "peso": 190,
+                        "precio": 12000,
+                        "marca": "Honda",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "R1250 GS",
+                        "peso": 249,
+                        "precio": 20000,
+                        "marca": "BMW",
+                        "año": 2023,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Meta Quest 3",
+                        "peso": 0.5,
+                        "precio": 500,
+                        "marca": "Meta",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Té Negro (Caja)",
+                        "peso": 0.1,
+                        "precio": 3.0,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Yaris",
+                        "peso": 1080,
+                        "precio": 18000,
+                        "marca": "Toyota",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Acer Predator Helios",
+                        "peso": 2.8,
+                        "precio": 1600,
+                        "marca": "Acer",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Xbox Series X",
+                        "peso": 4.4,
+                        "precio": 500,
+                        "marca": "Microsoft",
+                        "cantidad": 4
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Atún en Lata",
+                        "peso": 0.17,
+                        "precio": 1.8,
+                        "requiere_frio": false,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Xiaomi 13T Pro",
+                        "peso": 0.2,
+                        "precio": 700,
+                        "marca": "Xiaomi",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Air Fryer XXL",
+                        "peso": 6.5,
+                        "precio": 180,
+                        "marca": "Philips",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Mermelada de Fresa",
+                        "peso": 0.4,
+                        "precio": 3.2,
+                        "requiere_frio": false,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Navara",
+                        "peso": 2050,
+                        "precio": 38000,
+                        "marca": "Nissan",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Sonos Arc Soundbar",
+                        "peso": 6.2,
+                        "precio": 900,
+                        "marca": "Sonos",
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "AirPods Max",
+                        "peso": 0.38,
+                        "precio": 550,
+                        "marca": "Apple",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Africa Twin",
+                        "peso": 230,
+                        "precio": 15000,
+                        "marca": "Honda",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Corvette C8",
+                        "peso": 1600,
+                        "precio": 70000,
+                        "marca": "Chevrolet",
+                        "año": 2024,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "CR-V",
+                        "peso": 1550,
+                        "precio": 31000,
+                        "marca": "Honda",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Cybertruck",
+                        "peso": 3000,
+                        "precio": 80000,
+                        "marca": "Tesla",
+                        "año": 2024,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Ram 1500",
+                        "peso": 2500,
+                        "precio": 60000,
+                        "marca": "Ram",
+                        "año": 2024,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Impreza",
+                        "peso": 1450,
+                        "precio": 25000,
+                        "marca": "Subaru",
+                        "año": 2022,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Mustang GT",
+                        "peso": 1750,
+                        "precio": 55000,
+                        "marca": "Ford",
+                        "año": 2024,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Samsung QLED 75'",
+                        "peso": 35.0,
+                        "precio": 1800,
+                        "marca": "Samsung",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Volante Logitech G29",
+                        "peso": 5.3,
+                        "precio": 300,
+                        "marca": "Logitech",
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Sony WH-1000XM5",
+                        "peso": 0.25,
+                        "precio": 400,
+                        "marca": "Sony",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Mazda 3",
+                        "peso": 1320,
+                        "precio": 23000,
+                        "marca": "Mazda",
+                        "año": 2024,
+                        "cantidad": 4
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Google Pixel 8 Pro",
+                        "peso": 0.21,
+                        "precio": 1000,
+                        "marca": "Google",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "Scrambler",
+                        "peso": 185,
+                        "precio": 10500,
+                        "marca": "Triumph",
+                        "año": 2023,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Lenovo ThinkPad X1",
+                        "peso": 1.1,
+                        "precio": 1400,
+                        "marca": "Lenovo",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Aceite de Oliva",
+                        "peso": 0.9,
+                        "precio": 8.0,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Chocolate Amargo",
+                        "peso": 0.1,
+                        "precio": 2.5,
+                        "requiere_frio": false,
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Vehiculo",
+                        "nombre": "MT-07",
+                        "peso": 184,
+                        "precio": 8000,
+                        "marca": "Yamaha",
+                        "año": 2024,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Sandía Entera",
+                        "peso": 5.0,
+                        "precio": 6.0,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Mac Mini",
+                        "peso": 1.2,
+                        "precio": 700,
+                        "marca": "Apple",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Fideos Espagueti",
+                        "peso": 0.4,
+                        "precio": 0.8,
+                        "requiere_frio": false,
+                        "cantidad": 3
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Bose QuietComfort 45",
+                        "peso": 0.24,
+                        "precio": 330,
+                        "marca": "Bose",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "HP Spectre x360",
+                        "peso": 1.3,
+                        "precio": 1300,
+                        "marca": "HP",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Galaxy Tab S9 Ultra",
+                        "peso": 0.73,
+                        "precio": 1000,
+                        "marca": "Samsung",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "MacBook Pro 16",
+                        "peso": 2.1,
+                        "precio": 2500,
+                        "marca": "Apple",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Robot Aspiradora Roomba",
+                        "peso": 3.5,
+                        "precio": 600,
+                        "marca": "iRobot",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Manzana Roja",
+                        "peso": 0.2,
+                        "precio": 0.5,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Salsa de Tomate",
+                        "peso": 0.2,
+                        "precio": 0.9,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Samsung Galaxy S24 Ultra",
+                        "peso": 0.23,
+                        "precio": 1300,
+                        "marca": "Samsung",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Monitor Curvo 34'",
+                        "peso": 8.0,
+                        "precio": 500,
+                        "marca": "Samsung",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Cerradura Inteligente",
+                        "peso": 1.5,
+                        "precio": 250,
+                        "marca": "Yale",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Garmin Fenix 7",
+                        "peso": 0.08,
+                        "precio": 700,
+                        "marca": "Garmin",
+                        "cantidad": 2
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Cafetera Nespresso",
+                        "peso": 3.0,
+                        "precio": 200,
+                        "marca": "Nespresso",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Mouse G502 Hero",
+                        "peso": 0.12,
+                        "precio": 50,
+                        "marca": "Logitech",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Lentejas",
+                        "peso": 1.0,
+                        "precio": 2.0,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    }
+                ]
             },
             {
                 "id": "CR005",
@@ -1536,7 +2406,7 @@
                         "peso": 0.9,
                         "precio": 8.0,
                         "requiere_frio": false,
-                        "cantidad": 5
+                        "cantidad": 228
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1544,7 +2414,7 @@
                         "peso": 0.2,
                         "precio": 700,
                         "marca": "Xiaomi",
-                        "cantidad": 6
+                        "cantidad": 244
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1552,7 +2422,7 @@
                         "peso": 24.0,
                         "precio": 2200,
                         "marca": "Sony",
-                        "cantidad": 7
+                        "cantidad": 223
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1560,7 +2430,7 @@
                         "peso": 6.5,
                         "precio": 180,
                         "marca": "Philips",
-                        "cantidad": 7
+                        "cantidad": 238
                     },
                     {
                         "tipo": "Alimento",
@@ -1568,7 +2438,7 @@
                         "peso": 0.25,
                         "precio": 6.0,
                         "requiere_frio": false,
-                        "cantidad": 6
+                        "cantidad": 248
                     },
                     {
                         "tipo": "Alimento",
@@ -1576,7 +2446,7 @@
                         "peso": 0.5,
                         "precio": 12.0,
                         "requiere_frio": true,
-                        "cantidad": 7
+                        "cantidad": 232
                     },
                     {
                         "tipo": "Alimento",
@@ -1584,7 +2454,7 @@
                         "peso": 0.1,
                         "precio": 3.0,
                         "requiere_frio": false,
-                        "cantidad": 9
+                        "cantidad": 250
                     },
                     {
                         "tipo": "Alimento",
@@ -1592,7 +2462,7 @@
                         "peso": 0.2,
                         "precio": 0.6,
                         "requiere_frio": false,
-                        "cantidad": 6
+                        "cantidad": 221
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1600,7 +2470,7 @@
                         "peso": 35.0,
                         "precio": 1800,
                         "marca": "Samsung",
-                        "cantidad": 6
+                        "cantidad": 232
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1608,7 +2478,7 @@
                         "peso": 0.73,
                         "precio": 1000,
                         "marca": "Samsung",
-                        "cantidad": 8
+                        "cantidad": 238
                     },
                     {
                         "tipo": "Alimento",
@@ -1616,7 +2486,7 @@
                         "peso": 1.0,
                         "precio": 2.0,
                         "requiere_frio": false,
-                        "cantidad": 8
+                        "cantidad": 221
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1624,7 +2494,7 @@
                         "peso": 0.2,
                         "precio": 150,
                         "marca": "Amazon",
-                        "cantidad": 5
+                        "cantidad": 253
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1632,7 +2502,7 @@
                         "peso": 1.3,
                         "precio": 200,
                         "marca": "Corsair",
-                        "cantidad": 7
+                        "cantidad": 222
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1640,7 +2510,7 @@
                         "peso": 2.8,
                         "precio": 1600,
                         "marca": "Acer",
-                        "cantidad": 5
+                        "cantidad": 247
                     },
                     {
                         "tipo": "Alimento",
@@ -1648,7 +2518,7 @@
                         "peso": 0.8,
                         "precio": 7.0,
                         "requiere_frio": true,
-                        "cantidad": 11
+                        "cantidad": 233
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1656,7 +2526,7 @@
                         "peso": 0.12,
                         "precio": 50,
                         "marca": "Logitech",
-                        "cantidad": 11
+                        "cantidad": 243
                     },
                     {
                         "tipo": "Alimento",
@@ -1664,7 +2534,7 @@
                         "peso": 0.17,
                         "precio": 1.8,
                         "requiere_frio": false,
-                        "cantidad": 9
+                        "cantidad": 255
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1672,7 +2542,7 @@
                         "peso": 1.3,
                         "precio": 1300,
                         "marca": "HP",
-                        "cantidad": 6
+                        "cantidad": 251
                     },
                     {
                         "tipo": "Alimento",
@@ -1680,7 +2550,7 @@
                         "peso": 1.0,
                         "precio": 5.5,
                         "requiere_frio": true,
-                        "cantidad": 4
+                        "cantidad": 250
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1688,7 +2558,7 @@
                         "peso": 2.5,
                         "precio": 1800,
                         "marca": "ASUS",
-                        "cantidad": 6
+                        "cantidad": 250
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1696,7 +2566,7 @@
                         "peso": 0.05,
                         "precio": 350,
                         "marca": "Samsung",
-                        "cantidad": 6
+                        "cantidad": 215
                     },
                     {
                         "tipo": "Alimento",
@@ -1704,7 +2574,7 @@
                         "peso": 0.45,
                         "precio": 3.5,
                         "requiere_frio": true,
-                        "cantidad": 6
+                        "cantidad": 239
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1712,7 +2582,7 @@
                         "peso": 0.3,
                         "precio": 130,
                         "marca": "Google",
-                        "cantidad": 4
+                        "cantidad": 230
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1720,7 +2590,7 @@
                         "peso": 0.68,
                         "precio": 1100,
                         "marca": "Apple",
-                        "cantidad": 7
+                        "cantidad": 255
                     },
                     {
                         "tipo": "Alimento",
@@ -1728,7 +2598,7 @@
                         "peso": 1.5,
                         "precio": 3.5,
                         "requiere_frio": false,
-                        "cantidad": 10
+                        "cantidad": 237
                     },
                     {
                         "tipo": "Alimento",
@@ -1736,7 +2606,7 @@
                         "peso": 0.3,
                         "precio": 1.5,
                         "requiere_frio": false,
-                        "cantidad": 3
+                        "cantidad": 278
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1744,7 +2614,7 @@
                         "peso": 0.23,
                         "precio": 1300,
                         "marca": "Samsung",
-                        "cantidad": 6
+                        "cantidad": 267
                     },
                     {
                         "tipo": "Alimento",
@@ -1752,7 +2622,7 @@
                         "peso": 1.0,
                         "precio": 2.1,
                         "requiere_frio": false,
-                        "cantidad": 8
+                        "cantidad": 245
                     },
                     {
                         "tipo": "Alimento",
@@ -1760,7 +2630,7 @@
                         "peso": 0.4,
                         "precio": 0.8,
                         "requiere_frio": false,
-                        "cantidad": 15
+                        "cantidad": 254
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1768,7 +2638,7 @@
                         "peso": 110.0,
                         "precio": 2500,
                         "marca": "Samsung",
-                        "cantidad": 9
+                        "cantidad": 243
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1776,7 +2646,7 @@
                         "peso": 17.4,
                         "precio": 500,
                         "marca": "JBL",
-                        "cantidad": 8
+                        "cantidad": 235
                     },
                     {
                         "tipo": "Alimento",
@@ -1784,7 +2654,7 @@
                         "peso": 0.5,
                         "precio": 2.5,
                         "requiere_frio": true,
-                        "cantidad": 11
+                        "cantidad": 233
                     },
                     {
                         "tipo": "Alimento",
@@ -1792,7 +2662,7 @@
                         "peso": 0.3,
                         "precio": 4.5,
                         "requiere_frio": true,
-                        "cantidad": 5
+                        "cantidad": 251
                     },
                     {
                         "tipo": "Alimento",
@@ -1800,7 +2670,7 @@
                         "peso": 0.5,
                         "precio": 4.0,
                         "requiere_frio": false,
-                        "cantidad": 8
+                        "cantidad": 240
                     },
                     {
                         "tipo": "Alimento",
@@ -1808,7 +2678,7 @@
                         "peso": 0.5,
                         "precio": 7.0,
                         "requiere_frio": false,
-                        "cantidad": 6
+                        "cantidad": 204
                     },
                     {
                         "tipo": "Alimento",
@@ -1816,7 +2686,7 @@
                         "peso": 0.25,
                         "precio": 1.8,
                         "requiere_frio": false,
-                        "cantidad": 10
+                        "cantidad": 242
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1824,7 +2694,7 @@
                         "peso": 28.0,
                         "precio": 450,
                         "marca": "Secretlab",
-                        "cantidad": 7
+                        "cantidad": 238
                     },
                     {
                         "tipo": "Alimento",
@@ -1832,7 +2702,7 @@
                         "peso": 0.4,
                         "precio": 3.0,
                         "requiere_frio": true,
-                        "cantidad": 7
+                        "cantidad": 220
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1840,7 +2710,7 @@
                         "peso": 0.06,
                         "precio": 800,
                         "marca": "Apple",
-                        "cantidad": 6
+                        "cantidad": 207
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1848,7 +2718,7 @@
                         "peso": 2.2,
                         "precio": 1600,
                         "marca": "NVIDIA",
-                        "cantidad": 6
+                        "cantidad": 254
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1856,7 +2726,7 @@
                         "peso": 75.0,
                         "precio": 900,
                         "marca": "LG",
-                        "cantidad": 9
+                        "cantidad": 223
                     },
                     {
                         "tipo": "Alimento",
@@ -1864,7 +2734,7 @@
                         "peso": 0.22,
                         "precio": 3.0,
                         "requiere_frio": true,
-                        "cantidad": 5
+                        "cantidad": 231
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1872,7 +2742,7 @@
                         "peso": 0.5,
                         "precio": 500,
                         "marca": "Meta",
-                        "cantidad": 8
+                        "cantidad": 229
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1880,7 +2750,7 @@
                         "peso": 1.5,
                         "precio": 250,
                         "marca": "Yale",
-                        "cantidad": 12
+                        "cantidad": 254
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1888,7 +2758,7 @@
                         "peso": 1.2,
                         "precio": 1200,
                         "marca": "Dell",
-                        "cantidad": 11
+                        "cantidad": 232
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1896,7 +2766,7 @@
                         "peso": 6.2,
                         "precio": 900,
                         "marca": "Sonos",
-                        "cantidad": 8
+                        "cantidad": 229
                     },
                     {
                         "tipo": "Alimento",
@@ -1904,7 +2774,7 @@
                         "peso": 2.5,
                         "precio": 4.0,
                         "requiere_frio": false,
-                        "cantidad": 6
+                        "cantidad": 237
                     },
                     {
                         "tipo": "Alimento",
@@ -1912,7 +2782,7 @@
                         "peso": 0.35,
                         "precio": 2.0,
                         "requiere_frio": true,
-                        "cantidad": 4
+                        "cantidad": 257
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1920,7 +2790,7 @@
                         "peso": 0.25,
                         "precio": 400,
                         "marca": "Sony",
-                        "cantidad": 8
+                        "cantidad": 205
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1928,7 +2798,7 @@
                         "peso": 4.2,
                         "precio": 600,
                         "marca": "SpaceX",
-                        "cantidad": 5
+                        "cantidad": 237
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1936,7 +2806,7 @@
                         "peso": 4.8,
                         "precio": 250,
                         "marca": "Xiaomi",
-                        "cantidad": 11
+                        "cantidad": 245
                     },
                     {
                         "tipo": "Alimento",
@@ -1944,7 +2814,7 @@
                         "peso": 1.0,
                         "precio": 1.2,
                         "requiere_frio": true,
-                        "cantidad": 5
+                        "cantidad": 217
                     },
                     {
                         "tipo": "Alimento",
@@ -1952,7 +2822,7 @@
                         "peso": 0.1,
                         "precio": 2.5,
                         "requiere_frio": false,
-                        "cantidad": 3
+                        "cantidad": 215
                     },
                     {
                         "tipo": "Alimento",
@@ -1960,7 +2830,7 @@
                         "peso": 0.1,
                         "precio": 0.25,
                         "requiere_frio": false,
-                        "cantidad": 3
+                        "cantidad": 235
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1968,7 +2838,7 @@
                         "peso": 1.2,
                         "precio": 700,
                         "marca": "Apple",
-                        "cantidad": 6
+                        "cantidad": 223
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1976,7 +2846,7 @@
                         "peso": 4.5,
                         "precio": 1500,
                         "marca": "Apple",
-                        "cantidad": 6
+                        "cantidad": 244
                     },
                     {
                         "tipo": "Tecnologia",
@@ -1984,7 +2854,7 @@
                         "peso": 8.0,
                         "precio": 500,
                         "marca": "Samsung",
-                        "cantidad": 5
+                        "cantidad": 235
                     },
                     {
                         "tipo": "Alimento",
@@ -1992,7 +2862,7 @@
                         "peso": 0.2,
                         "precio": 0.5,
                         "requiere_frio": false,
-                        "cantidad": 7
+                        "cantidad": 232
                     },
                     {
                         "tipo": "Alimento",
@@ -2000,7 +2870,7 @@
                         "peso": 0.25,
                         "precio": 5.0,
                         "requiere_frio": true,
-                        "cantidad": 3
+                        "cantidad": 228
                     },
                     {
                         "tipo": "Alimento",
@@ -2008,7 +2878,7 @@
                         "peso": 1.0,
                         "precio": 15.0,
                         "requiere_frio": true,
-                        "cantidad": 4
+                        "cantidad": 221
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2016,7 +2886,7 @@
                         "peso": 5.3,
                         "precio": 300,
                         "marca": "Logitech",
-                        "cantidad": 4
+                        "cantidad": 234
                     },
                     {
                         "tipo": "Alimento",
@@ -2024,7 +2894,7 @@
                         "peso": 0.2,
                         "precio": 0.9,
                         "requiere_frio": false,
-                        "cantidad": 8
+                        "cantidad": 243
                     },
                     {
                         "tipo": "Alimento",
@@ -2032,7 +2902,7 @@
                         "peso": 0.25,
                         "precio": 2.5,
                         "requiere_frio": true,
-                        "cantidad": 5
+                        "cantidad": 232
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2040,7 +2910,7 @@
                         "peso": 3.1,
                         "precio": 750,
                         "marca": "Dyson",
-                        "cantidad": 6
+                        "cantidad": 248
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2048,7 +2918,7 @@
                         "peso": 0.24,
                         "precio": 330,
                         "marca": "Bose",
-                        "cantidad": 5
+                        "cantidad": 267
                     },
                     {
                         "tipo": "Alimento",
@@ -2056,7 +2926,7 @@
                         "peso": 0.15,
                         "precio": 0.4,
                         "requiere_frio": false,
-                        "cantidad": 7
+                        "cantidad": 239
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2064,7 +2934,7 @@
                         "peso": 0.9,
                         "precio": 1000,
                         "marca": "Microsoft",
-                        "cantidad": 6
+                        "cantidad": 232
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2072,7 +2942,7 @@
                         "peso": 0.38,
                         "precio": 550,
                         "marca": "Apple",
-                        "cantidad": 3
+                        "cantidad": 238
                     },
                     {
                         "tipo": "Alimento",
@@ -2080,7 +2950,7 @@
                         "peso": 0.15,
                         "precio": 1.0,
                         "requiere_frio": true,
-                        "cantidad": 9
+                        "cantidad": 254
                     },
                     {
                         "tipo": "Alimento",
@@ -2088,7 +2958,7 @@
                         "peso": 0.2,
                         "precio": 1.8,
                         "requiere_frio": true,
-                        "cantidad": 8
+                        "cantidad": 234
                     },
                     {
                         "tipo": "Alimento",
@@ -2096,7 +2966,7 @@
                         "peso": 0.25,
                         "precio": 2.2,
                         "requiere_frio": true,
-                        "cantidad": 7
+                        "cantidad": 231
                     },
                     {
                         "tipo": "Alimento",
@@ -2104,7 +2974,7 @@
                         "peso": 0.18,
                         "precio": 0.3,
                         "requiere_frio": false,
-                        "cantidad": 9
+                        "cantidad": 234
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2112,7 +2982,7 @@
                         "peso": 0.21,
                         "precio": 1000,
                         "marca": "Google",
-                        "cantidad": 5
+                        "cantidad": 247
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2120,7 +2990,7 @@
                         "peso": 0.22,
                         "precio": 1200,
                         "marca": "Apple",
-                        "cantidad": 5
+                        "cantidad": 243
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2128,7 +2998,7 @@
                         "peso": 0.64,
                         "precio": 550,
                         "marca": "Valve",
-                        "cantidad": 6
+                        "cantidad": 247
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2136,7 +3006,7 @@
                         "peso": 2.1,
                         "precio": 2500,
                         "marca": "Apple",
-                        "cantidad": 5
+                        "cantidad": 214
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2144,7 +3014,7 @@
                         "peso": 4.4,
                         "precio": 500,
                         "marca": "Microsoft",
-                        "cantidad": 5
+                        "cantidad": 228
                     },
                     {
                         "tipo": "Alimento",
@@ -2152,7 +3022,7 @@
                         "peso": 0.4,
                         "precio": 14.0,
                         "requiere_frio": true,
-                        "cantidad": 10
+                        "cantidad": 222
                     },
                     {
                         "tipo": "Alimento",
@@ -2160,7 +3030,7 @@
                         "peso": 1.0,
                         "precio": 1.5,
                         "requiere_frio": false,
-                        "cantidad": 5
+                        "cantidad": 235
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2168,7 +3038,7 @@
                         "peso": 3.2,
                         "precio": 500,
                         "marca": "Sony",
-                        "cantidad": 8
+                        "cantidad": 235
                     },
                     {
                         "tipo": "Alimento",
@@ -2176,7 +3046,7 @@
                         "peso": 0.8,
                         "precio": 8.5,
                         "requiere_frio": true,
-                        "cantidad": 4
+                        "cantidad": 225
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2184,7 +3054,7 @@
                         "peso": 3.5,
                         "precio": 600,
                         "marca": "iRobot",
-                        "cantidad": 7
+                        "cantidad": 246
                     },
                     {
                         "tipo": "Alimento",
@@ -2192,7 +3062,7 @@
                         "peso": 0.4,
                         "precio": 3.2,
                         "requiere_frio": false,
-                        "cantidad": 6
+                        "cantidad": 235
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2200,7 +3070,7 @@
                         "peso": 0.15,
                         "precio": 400,
                         "marca": "GoPro",
-                        "cantidad": 3
+                        "cantidad": 247
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2208,7 +3078,7 @@
                         "peso": 1.1,
                         "precio": 1400,
                         "marca": "Lenovo",
-                        "cantidad": 9
+                        "cantidad": 238
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2216,7 +3086,7 @@
                         "peso": 0.42,
                         "precio": 350,
                         "marca": "Nintendo",
-                        "cantidad": 8
+                        "cantidad": 228
                     },
                     {
                         "tipo": "Alimento",
@@ -2224,7 +3094,7 @@
                         "peso": 1.2,
                         "precio": 18.0,
                         "requiere_frio": true,
-                        "cantidad": 7
+                        "cantidad": 198
                     },
                     {
                         "tipo": "Alimento",
@@ -2232,7 +3102,7 @@
                         "peso": 1.0,
                         "precio": 1.2,
                         "requiere_frio": false,
-                        "cantidad": 9
+                        "cantidad": 241
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2240,7 +3110,7 @@
                         "peso": 0.08,
                         "precio": 700,
                         "marca": "Garmin",
-                        "cantidad": 7
+                        "cantidad": 238
                     },
                     {
                         "tipo": "Alimento",
@@ -2248,7 +3118,7 @@
                         "peso": 0.5,
                         "precio": 6.0,
                         "requiere_frio": true,
-                        "cantidad": 4
+                        "cantidad": 203
                     },
                     {
                         "tipo": "Alimento",
@@ -2256,7 +3126,7 @@
                         "peso": 1.0,
                         "precio": 1.5,
                         "requiere_frio": true,
-                        "cantidad": 5
+                        "cantidad": 219
                     },
                     {
                         "tipo": "Alimento",
@@ -2264,7 +3134,7 @@
                         "peso": 5.0,
                         "precio": 6.0,
                         "requiere_frio": false,
-                        "cantidad": 5
+                        "cantidad": 245
                     },
                     {
                         "tipo": "Alimento",
@@ -2272,7 +3142,7 @@
                         "peso": 0.7,
                         "precio": 2.2,
                         "requiere_frio": true,
-                        "cantidad": 6
+                        "cantidad": 245
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2280,7 +3150,7 @@
                         "peso": 4.1,
                         "precio": 900,
                         "marca": "Epson",
-                        "cantidad": 6
+                        "cantidad": 225
                     },
                     {
                         "tipo": "Alimento",
@@ -2288,7 +3158,7 @@
                         "peso": 0.5,
                         "precio": 0.9,
                         "requiere_frio": false,
-                        "cantidad": 4
+                        "cantidad": 264
                     },
                     {
                         "tipo": "Alimento",
@@ -2296,7 +3166,7 @@
                         "peso": 0.3,
                         "precio": 1.2,
                         "requiere_frio": true,
-                        "cantidad": 5
+                        "cantidad": 234
                     },
                     {
                         "tipo": "Alimento",
@@ -2304,7 +3174,7 @@
                         "peso": 1.0,
                         "precio": 9.0,
                         "requiere_frio": true,
-                        "cantidad": 5
+                        "cantidad": 235
                     },
                     {
                         "tipo": "Alimento",
@@ -2312,7 +3182,7 @@
                         "peso": 1.0,
                         "precio": 1.1,
                         "requiere_frio": false,
-                        "cantidad": 3
+                        "cantidad": 236
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2320,7 +3190,7 @@
                         "peso": 18.0,
                         "precio": 1500,
                         "marca": "LG",
-                        "cantidad": 4
+                        "cantidad": 254
                     },
                     {
                         "tipo": "Tecnologia",
@@ -2328,10 +3198,16 @@
                         "peso": 3.0,
                         "precio": 200,
                         "marca": "Nespresso",
-                        "cantidad": 6
+                        "cantidad": 220
                     }
                 ]
             }
         ]
+    },
+    {
+        "nombre": "Puerto N1",
+        "ubicacion": "Argentina",
+        "capacidad_maxima": 40,
+        "contenedores": []
     }
 ]
