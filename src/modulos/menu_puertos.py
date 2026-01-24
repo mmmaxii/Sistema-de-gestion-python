@@ -1,6 +1,7 @@
 from utils import decoradores
 import time
 from utils.generadores import generar_contenedor_random
+from .menu_contenedor import menu_contenedor_individual
 
 def eliminar_contenedor(puerto):
     if not puerto.contenedores:
@@ -31,15 +32,17 @@ def menu_ver_contenedores(puerto):
         if not puerto.contenedores:
             print("⚠ Este puerto no tiene contenedores registrados.")
         else:
-            print(f"{'No.':<5} {'ID':<10} {'Tipo':<15} {'Peso Max':<10}")
-            print("-" * 45)
+            print(f"{'No.':<5} {'ID':<10} {'Tipo':<15} {'Peso Max':<10} {'Peso Actual':<10}")
+            print("-" * 60)
             for i, contenedor in enumerate(puerto.contenedores, start=1):
-                print(f"{i:<5} {contenedor.id:<10} {contenedor.tipo:<15} {contenedor.peso_maximo:<10}")
+                peso_actual = contenedor.calcular_peso_actual()
+                print(f"{i:<5} {contenedor.id:<10} {contenedor.tipo:<15} {contenedor.peso_maximo:<10} {peso_actual:<10}")
                 time.sleep(0.1)
         
-        print("-" * 30)
+        print("-" * 60)
         print(" 1. Agregar contenedor")
         print(" 2. Eliminar contenedor")
+        print(" 3. Modificar contenedor")
         print(" 0. Volver")
         print("-" * 30)
 
@@ -56,6 +59,24 @@ def menu_ver_contenedores(puerto):
 
         elif opcion == "2":
             eliminar_contenedor(puerto)
+
+        elif opcion == "3":
+            if not puerto.contenedores:
+                print("⚠ No hay contenedores para modificar.")
+                time.sleep(1)
+                continue
+            
+            try:
+                indice = int(input("Ingrese el número del contenedor a modificar: "))
+                if 1 <= indice <= len(puerto.contenedores):
+                    contenedor_seleccionado = puerto.contenedores[indice - 1]
+                    menu_contenedor_individual(contenedor_seleccionado)
+                else:
+                    print("❌ Índice fuera de rango.")
+                    time.sleep(1)
+            except ValueError:
+                print("❌ Ingrese un número válido.")
+                time.sleep(1)
 
         else:
             print("❌ Opción inválida.")

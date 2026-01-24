@@ -1,4 +1,6 @@
 from utils import decoradores
+from utils.generadores import generar_producto_general
+import time
 
 def menu_contenedores(puerto):
     while True:
@@ -83,9 +85,9 @@ def agregar_productos_aleatorios(contenedor):
 
         if contenedor.agregar_producto(producto):
             agregados += 1
-        else:
-            print("⚠ No se pudo agregar más productos.")
-            break
-
-    print(f"\n✅ Productos agregados: {agregados}/{cantidad}")
+    
+    if agregados == 0:
+        print("\n⚠ No se agregaron productos.")
+    else:
+        print(f"\n✅ Proceso completado. Se agregaron {agregados} de {cantidad} productos intentados.")
     input("ENTER para continuar...")
