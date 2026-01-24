@@ -58,9 +58,17 @@ def _contenedor_from_dict(data):
     contenedor.peso_maximo = data["peso_maximo"]
 
     for prod_data in data["carga"]:
-        contenedor.carga.append(
-            _producto_from_dict(prod_data)
-        )
+        producto = _producto_from_dict(prod_data)
+        cantidad = prod_data.get("cantidad", 1)  # Default 1 para compatibilidad
+        
+        # Insertar directamente para evitar prints de agregar_producto
+        contenedor.carga[producto.nombre] = {
+            "producto": producto,
+            "cantidad": cantidad
+        }
+    
+    # Recalcular peso inicial
+    contenedor.peso_actual = contenedor.calcular_peso_actual()
 
     return contenedor
 

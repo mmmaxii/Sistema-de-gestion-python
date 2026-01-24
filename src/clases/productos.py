@@ -21,7 +21,10 @@ class Alimento(Producto):
         self.requiere_frio = requiere_frio
     
     def __str__(self):
-        return f"{self.nombre} - {self.peso} kg - ${self.precio} - Requiere frío: {self.requiere_frio}"    
+        if self.requiere_frio:
+            return f"{self.nombre} - {self.peso} kg - ${self.precio} - Requiere frío"
+        else:
+            return f"{self.nombre} - {self.peso} kg - ${self.precio} - No requiere frío"
     
     def to_dict(self):
         data = super().to_dict()

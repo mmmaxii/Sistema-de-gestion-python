@@ -45,8 +45,10 @@ def menu_contenedor_individual(contenedor):
 
         if contenedor.carga:
             print(" 📦 Productos:")
-            for prod in contenedor.carga:
-                print(f"  - {prod}")
+            for item in contenedor.carga.values():
+                producto = item["producto"]
+                cantidad = item["cantidad"]
+                print(f"  - {cantidad}x {producto}")
         else:
             print(" ⚠ Contenedor vacío.")
 
@@ -81,11 +83,16 @@ def agregar_productos_aleatorios(contenedor):
     agregados = 0
 
     for _ in range(cantidad):
+        # Verificar si ya está lleno antes de intentar
+        if contenedor.peso_actual >= contenedor.peso_maximo:
+            print("\n⚠ El contenedor ha alcanzado su capacidad máxima de peso. Deteniendo...")
+            break
+
         producto = generar_producto_general()
 
         if contenedor.agregar_producto(producto):
             agregados += 1
-    
+
     if agregados == 0:
         print("\n⚠ No se agregaron productos.")
     else:

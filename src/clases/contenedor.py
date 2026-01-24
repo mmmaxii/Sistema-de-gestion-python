@@ -4,26 +4,37 @@ class Contenedor:
     def __init__(self, id_contenedor, tipo_contenedor):
         self.id = id_contenedor
         self.tipo = tipo_contenedor  # Refrigerado, Seco, OpenTop
-        self.carga = []  
+        self.carga = {}  # Diccionario: { nombre_producto: {"producto": obj_producto, "cantidad": int} }
         self.peso_maximo = 100000 #kg
-        self.peso_actual = self.calcular_peso_actual()
+        self.peso_actual = round(self.calcular_peso_actual(), 2)
 
     def calcular_peso_actual(self):
-        return sum(producto.peso for producto in self.carga)
+        total = 0
+        for item in self.carga.values():
+            total += item["producto"].peso * item["cantidad"]
+        return total
 
     def __str__(self):
+        # Recalcular peso actual al mostrar para asegurar consistencia
+        self.peso_actual = self.calcular_peso_actual()
         return f"📦 {self.id} - {self.tipo} - {self.peso_actual}/{self.peso_maximo} kg"
 
     def to_dict(self):
+        lista_carga = []
+        for item in self.carga.values():
+            prod_dict = item["producto"].to_dict()
+            prod_dict["cantidad"] = item["cantidad"] # Agregamos cantidad al dict del producto para guardar
+            lista_carga.append(prod_dict)
+
         return {
             "id": self.id,
             "tipo": self.tipo,
             "peso_maximo": self.peso_maximo,
-            "carga": [producto.to_dict() for producto in self.carga]
+            "carga": lista_carga
         }
 
     def agregar_producto(self, producto):
-
+        # Validaciones de Tipo
         if isinstance(producto, Alimento):
             if producto.requiere_frio and self.tipo != "Refrigerado":
                 print(f"ERROR: ¡El alimento {producto.nombre} se va a podrir! Necesita contenedor Refrigerado.")
@@ -34,10 +45,18 @@ class Contenedor:
                 print(f"ERROR: ¡El vehiculo {producto.nombre} se va a dañar! Necesita contenedor OpenTop.")
                 return False
         
+        # Validación de Peso
         if self.peso_actual + producto.peso > self.peso_maximo:
             print(f"ERROR: ¡El contenedor {self.id} está lleno! No cabe el producto {producto.nombre}.")
             return False
 
-        self.carga.append(producto)
-        print(f"Producto {producto.nombre} agregado con éxito.")
+        # Agregar o Actualizar
+        if producto.nombre in self.carga:
+            self.carga[producto.nombre]["cantidad"] += 1
+            print(f"Producto {producto.nombre} agregado (Cantidad: {self.carga[producto.nombre]['cantidad']}).")
+        else:
+            self.carga[producto.nombre] = {"producto": producto, "cantidad": 1}
+            print(f"Producto {producto.nombre} agregado con éxito.")
+        
+        self.peso_actual += producto.peso
         return True
