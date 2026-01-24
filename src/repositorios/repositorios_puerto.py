@@ -11,8 +11,6 @@ from clases.productos import (
     Vehiculo
 )
 
-
-
 def _producto_from_dict(data):
     tipo = data["tipo"]
 

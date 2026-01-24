@@ -275,3 +275,62 @@ BASE_DATOS_VEHICULOS = {
     "Panigale V4": (198, 25000, "Ducati", 2024),
     "Scrambler": (185, 10500, "Triumph", 2023)
 }
+
+
+BASE_DATOS_CONTENEDORES = {
+    # --- Contenedores Refrigerados (15) ---
+    "CR001": "Refrigerado",
+    "CR002": "Refrigerado",
+    "CR003": "Refrigerado",
+    "CR004": "Refrigerado",
+    "CR005": "Refrigerado",
+    "CR006": "Refrigerado",
+    "CR007": "Refrigerado",
+    "CR008": "Refrigerado",
+    "CR009": "Refrigerado",
+    "CR010": "Refrigerado",
+    "CR011": "Refrigerado",
+    "CR012": "Refrigerado",
+    "CR013": "Refrigerado",
+    "CR014": "Refrigerado",
+    "CR015": "Refrigerado",
+
+    # --- Contenedores Secos (20) ---
+    "CS001": "Seco",
+    "CS002": "Seco",
+    "CS003": "Seco",
+    "CS004": "Seco",
+    "CS005": "Seco",
+    "CS006": "Seco",
+    "CS007": "Seco",
+    "CS008": "Seco",
+    "CS009": "Seco",
+    "CS010": "Seco",
+    "CS011": "Seco",
+    "CS012": "Seco",
+    "CS013": "Seco",
+    "CS014": "Seco",
+    "CS015": "Seco",
+    "CS016": "Seco",
+    "CS017": "Seco",
+    "CS018": "Seco",
+    "CS019": "Seco",
+    "CS020": "Seco",
+
+    # --- Contenedores OpenTop (15) ---
+    "CO001": "OpenTop",
+    "CO002": "OpenTop",
+    "CO003": "OpenTop",
+    "CO004": "OpenTop",
+    "CO005": "OpenTop",
+    "CO006": "OpenTop",
+    "CO007": "OpenTop",
+    "CO008": "OpenTop",
+    "CO009": "OpenTop",
+    "CO010": "OpenTop",
+    "CO011": "OpenTop",
+    "CO012": "OpenTop",
+    "CO013": "OpenTop",
+    "CO014": "OpenTop",
+    "CO015": "OpenTop"
+}

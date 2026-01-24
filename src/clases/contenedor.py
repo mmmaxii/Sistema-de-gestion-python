@@ -12,7 +12,7 @@ class Contenedor:
         return sum(producto.peso for producto in self.carga)
 
     def __str__(self):
-        return f"{self.id} - {self.tipo} - {self.peso_actual}/{self.peso_maximo} kg"
+        return f"📦 {self.id} - {self.tipo} - {self.peso_actual}/{self.peso_maximo} kg"
 
     def to_dict(self):
         return {

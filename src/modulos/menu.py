@@ -1,3 +1,4 @@
+from time import time
 from utils.validadores import verificar_input_entero, verificar_pais_costeros
 import utils.decoradores as decoradores
 import time
@@ -5,6 +6,8 @@ from clases.puertos import Puerto
 from utils.generadores import generar_producto_general
 from clases.contenedor import Contenedor
 from clases.productos import Alimento, Tecnologia, Vehiculo
+from .menu_puertos import menu_ver_puertos
+from .menu_contenedor import menu_contenedores
 
 def menu_principal(puertos_en_curso):
     """Función que muestra el menú principal del sistema."""
@@ -18,23 +21,7 @@ def menu_principal(puertos_en_curso):
         opcion = verificar_input_entero(input("Ingrese una opcion: "), rango = range(1,5))
 
         if opcion == 1:
-            decoradores.cambio_de_pagina()
-            print("\n--- LISTA DE PUERTOS ACTUALES ---")
-            # Recorremos la lista que importamos, luego sera una lista que leeremos con un 
-            # Archivo JSON
-
-            # Quiero mejor extraer la lista de puertos de un archivo JSON. Luego modifcarlos si es
-            # Necesario y guardarlos nuevamente en el archivo JSON. 
-            # Para esto haré una funcion que extraiga todo. Luego otra que guarde todo.
-
-            
-            for puerto in puertos_en_curso:
-                print(puerto) # Esto usa el método __str__ que creamos en la clase.
-                time.sleep(0.3)
-                
-            # Luego me metere en la logica de gestionar los contenedores y demas
-            input("\nPresione ENTER para volver al menú...")
-            pass
+            menu_ver_puertos(puertos_en_curso)
 
         elif opcion == 2:
             # Luego me metere en la logica de agregar puertos
@@ -49,9 +36,9 @@ def menu_principal(puertos_en_curso):
                 puertos_en_curso.append(puerto)
                 input("\nPresione ENTER para volver al menú...")
                 pass
+
             else:
                 print("\nEl pais no es costero o está mal escrito.")
-
                 time.sleep(1)
                 input("\nPresione ENTER para volver al menú...")
                 pass
@@ -59,6 +46,7 @@ def menu_principal(puertos_en_curso):
         elif opcion == 3:
             # Luego me metere en la logica de eliminar puertos
             decoradores.cambio_de_pagina()
+
             print("\n--- ELIMINAR PUERTO ---")
             paises_disponibles = sorted({p.ubicacion for p in puertos_en_curso})
             print(f"Países con puertos registrados: {', '.join(paises_disponibles)}")
@@ -91,4 +79,6 @@ def menu_principal(puertos_en_curso):
             decoradores.despedida_programa()
             return puertos_en_curso
             
+
+
 
