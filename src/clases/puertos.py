@@ -26,6 +26,14 @@ class Puerto:
         
     def __str__(self):
         return f"⚓ {self.nombre} ({self.ubicacion}) - Ocupación: {len(self.contenedores)}/{self.capacidad_maxima}"
+
+    def to_dict(self):
+        return {
+            "nombre": self.nombre,
+            "ubicacion": self.ubicacion,
+            "capacidad_maxima": self.capacidad_maxima,
+            "contenedores": [c.to_dict() for c in self.contenedores]
+        }
     
     # Con esta funcion verificamos si el pais ingresado es costero, en caso de que no, se lanza un error, PERO,
     # no para el programa.

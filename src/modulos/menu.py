@@ -2,7 +2,7 @@ from utils.validadores import verificar_input_entero
 import utils.decoradores as decoradores
 import time
 from clases.puertos import puertos_registrados
-
+from utils.archivos import cargar_puertos, guardar_puertos
 
 
 def menu_principal():
@@ -22,11 +22,15 @@ def menu_principal():
             # Recorremos la lista que importamos, luego sera una lista que leeremos con un 
             # Archivo JSON
 
+            # Quiero mejor extraer la lista de puertos de un archivo JSON. Luego modifcarlos si es
+            # Necesario y guardarlos nuevamente en el archivo JSON. 
+            # Para esto haré una funcion que extraiga todo. Luego otra que guarde todo.
+
             if not puertos_registrados:
                 print("No hay puertos registrados.")
             else:
                 for puerto in puertos_registrados:
-                    print(puerto) # Esto usa el método __str__ que creamos
+                    print(puerto) # Esto usa el método __str__ que creamos en la clase.
                     time.sleep(0.3)
                     
             # Luego me metere en la logica de gestionar los contenedores y demas

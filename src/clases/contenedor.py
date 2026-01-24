@@ -11,6 +11,14 @@ class Contenedor:
     def __str__(self):
         return f"{self.id} - {self.tipo} - {self.peso_actual}/{self.peso_maximo} kg"
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "tipo": self.tipo,
+            "peso_maximo": self.peso_maximo,
+            "carga": [producto.to_dict() for producto in self.carga]
+        }
+
     def agregar_producto(self, producto):
 
         if isinstance(producto, Alimento):
