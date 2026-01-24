@@ -1,17 +1,21 @@
-from utils.generadores import generar_producto_general
+from utils import decoradores
 
 def menu_contenedores(puerto):
     while True:
         decoradores.cambio_de_pagina()
-        print(f"\n--- CONTENEDORES EN {puerto.nombre} ---\n")
+        decoradores.titulo_menu(f"CONTENEDORES EN {puerto.nombre.upper()}")
 
+        print(f"{'No.':<5} {'Descripción':<30}")
+        print("-" * 45)
         for i, cont in enumerate(puerto.contenedores, start=1):
-            print(f"{i}. {cont}")
+            print(f"{i:<5} {str(cont):<30}")
 
-        print("\n0. Volver")
+        print("-" * 30)
+        print(" 0. Volver")
+        print("-" * 30)
 
         try:
-            opcion = int(input("\nSeleccione un contenedor: "))
+            opcion = int(input("\nSeleccione un contenedor para ver detalles: "))
 
             if opcion == 0:
                 return
@@ -31,19 +35,23 @@ def menu_contenedores(puerto):
 def menu_contenedor_individual(contenedor):
     while True:
         decoradores.cambio_de_pagina()
-        print(f"\n--- CONTENEDOR {contenedor.id} ---")
-        print(f"Tipo: {contenedor.tipo}")
-        print(f"Carga actual: {len(contenedor.carga)} productos\n")
+        decoradores.titulo_menu(f"CONTENEDOR {contenedor.id}")
+        
+        print(f" Tipo: {contenedor.tipo}")
+        print(f" Carga actual: {len(contenedor.carga)} productos")
+        print("-" * 30)
 
         if contenedor.carga:
-            print("📦 Productos:")
+            print(" 📦 Productos:")
             for prod in contenedor.carga:
-                print(f" - {prod}")
+                print(f"  - {prod}")
         else:
-            print("⚠ Contenedor vacío.")
+            print(" ⚠ Contenedor vacío.")
 
-        print("\n1. Agregar productos aleatorios")
-        print("0. Volver")
+        print("-" * 30)
+        print(" 1. Agregar productos aleatorios")
+        print(" 0. Volver")
+        print("-" * 30)
 
         opcion = input("\nSeleccione una opción: ")
 

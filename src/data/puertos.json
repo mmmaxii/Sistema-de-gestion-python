@@ -3,6 +3,25 @@
         "nombre": "Puerto San Lorenzo",
         "ubicacion": "Chile",
         "capacidad_maxima": 99,
-        "contenedores": []
+        "contenedores": [
+            {
+                "id": "CR006",
+                "tipo": "Refrigerado",
+                "peso_maximo": 100000,
+                "carga": []
+            },
+            {
+                "id": "CS004",
+                "tipo": "Seco",
+                "peso_maximo": 100000,
+                "carga": []
+            },
+            {
+                "id": "CO005",
+                "tipo": "OpenTop",
+                "peso_maximo": 100000,
+                "carga": []
+            }
+        ]
     }
 ]

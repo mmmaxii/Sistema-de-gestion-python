@@ -12,11 +12,13 @@ from .menu_contenedor import menu_contenedores
 def menu_principal(puertos_en_curso):
     """Función que muestra el menú principal del sistema."""
     while True:
-        print("Menu principal \n"
-            + "1. Ver puertos \n"
-            + "2. Agregar puerto \n"
-            + "3. Eliminar puerto \n"
-            + "4. Salir \n")
+        decoradores.cambio_de_pagina()
+        decoradores.titulo_menu("MENÚ PRINCIPAL")
+        print(" 1. Ver puertos")
+        print(" 2. Agregar puerto")
+        print(" 3. Eliminar puerto")
+        print(" 4. Salir")
+        print("-" * 30)
 
         opcion = verificar_input_entero(input("Ingrese una opcion: "), rango = range(1,5))
 
@@ -26,7 +28,7 @@ def menu_principal(puertos_en_curso):
         elif opcion == 2:
             # Luego me metere en la logica de agregar puertos
             decoradores.cambio_de_pagina()
-            print("\n--- AGREGAR PUERTO ---")
+            decoradores.titulo_menu("AGREGAR PUERTO")
             nombre = input("Ingrese el nombre del puerto: ")
             ubicacion = input("Ingrese la ubicacion del puerto: ")
 
@@ -47,7 +49,7 @@ def menu_principal(puertos_en_curso):
             # Luego me metere en la logica de eliminar puertos
             decoradores.cambio_de_pagina()
 
-            print("\n--- ELIMINAR PUERTO ---")
+            decoradores.titulo_menu("ELIMINAR PUERTO")
             paises_disponibles = sorted({p.ubicacion for p in puertos_en_curso})
             print(f"Países con puertos registrados: {', '.join(paises_disponibles)}")
             ubicacion_buscada = input("Ingrese la ubicación para filtrar puertos: ")
