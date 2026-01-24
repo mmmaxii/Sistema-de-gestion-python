@@ -31,6 +31,9 @@ class Contenedor:
                 print(f"ERROR: ¡El vehiculo {producto.nombre} se va a dañar! Necesita contenedor OpenTop.")
                 return False
         
+        if self.peso_actual + producto.peso > self.peso_maximo:
+            print(f"ERROR: ¡El contenedor {self.id} está lleno! No cabe el producto {producto.nombre}.")
+            return False
 
         self.carga.append(producto)
         print(f"Producto {producto.nombre} agregado con éxito.")

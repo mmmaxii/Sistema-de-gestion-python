@@ -19,7 +19,6 @@ class PaisNoCostero(ValueError):
 
 class Puerto:
     def __init__(self, nombre: str, ubicacion: str, capacidad_maxima: int):
-        self._validar_pais(ubicacion)
         self.nombre = nombre
         self.ubicacion = ubicacion
         self.contenedores = [] 
@@ -36,12 +35,7 @@ class Puerto:
             "contenedores": [c.to_dict() for c in self.contenedores]
         }
     
-    # Con esta funcion verificamos si el pais ingresado es costero, en caso de que no, se lanza un error, PERO,
-    # no para el programa.
-    def _validar_pais(self, ubicacion):
-        if quitar_tildes_y_mayus(ubicacion) not in PAISES_COSTEROS:
-            raise PaisNoCostero(f"El pais {ubicacion} no es costero.")
-
+   
     def agregar_contenedor(self, contenedor):
         """
         Agrega un contenedor solo si hay espacio disponible.
@@ -56,12 +50,4 @@ class Puerto:
         return True
 
 
-
-puertos_registrados = []
-producto = Alimento("Manzanas", 100, 10000, True)
-contenedor = Contenedor("C-101", "Refrigerado")
-contenedor.agregar_producto(producto)
-puerto = Puerto("Puerto de San Antonio", "Chile", 50)
-puerto.agregar_contenedor(contenedor)
-puertos_registrados.append(puerto)
 

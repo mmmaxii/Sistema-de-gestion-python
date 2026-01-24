@@ -117,13 +117,12 @@ class RepositorioPuertos:
             with open(self.ruta, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            if not isinstance(data, list):
-                raise ValueError("Estructura JSON inválida")
-
+            if not isinstance(data, list) or not data:
+                raise ValueError("Estructura JSON inválida o vacía")
+        
         except (FileNotFoundError, json.decoder.JSONDecodeError, ValueError):
             print("\n Inicializando archivo de puertos por defecto...\n")
             time.sleep(1)
-
             data = security_check(self.ruta)
   
         return [_puerto_from_dict(p) for p in data]
