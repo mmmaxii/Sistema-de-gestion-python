@@ -2,10 +2,9 @@ from utils.validadores import verificar_input_entero
 import utils.decoradores as decoradores
 import time
 from clases.puertos import puertos_registrados
-from utils.archivos import cargar_puertos, guardar_puertos
 
 
-def menu_principal():
+def menu_principal(puertos_en_curso):
     """Función que muestra el menú principal del sistema."""
     while True:
         print("Menu principal \n"
@@ -26,26 +25,29 @@ def menu_principal():
             # Necesario y guardarlos nuevamente en el archivo JSON. 
             # Para esto haré una funcion que extraiga todo. Luego otra que guarde todo.
 
-            if not puertos_registrados:
-                print("No hay puertos registrados.")
-            else:
-                for puerto in puertos_registrados:
-                    print(puerto) # Esto usa el método __str__ que creamos en la clase.
-                    time.sleep(0.3)
-                    
+            
+            for puerto in puertos_en_curso:
+                print(puerto) # Esto usa el método __str__ que creamos en la clase.
+                time.sleep(0.3)
+                
             # Luego me metere en la logica de gestionar los contenedores y demas
             input("\nPresione ENTER para volver al menú...")
             pass
+
         elif opcion == 2:
             # Luego me metere en la logica de agregar puertos
             decoradores.cambio_de_pagina()
 
             pass
+
         elif opcion == 3:
             # Luego me metere en la logica de eliminar puertos
             decoradores.cambio_de_pagina()
             pass
+
         elif opcion == 4:
+            
             decoradores.despedida_programa()
-            break
+            return puertos_en_curso
+            
 

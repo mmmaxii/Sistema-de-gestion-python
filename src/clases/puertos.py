@@ -1,5 +1,6 @@
 from multiprocessing.sharedctypes import Value
-from .contenedor import Contenedor 
+from .productos import Alimento, Tecnologia, Vehiculo
+from .contenedor import Contenedor
 from modulos.config import PAISES_COSTEROS
 
 
@@ -17,7 +18,7 @@ class PaisNoCostero(ValueError):
     pass
 
 class Puerto:
-    def __init__(self, nombre, ubicacion, capacidad_maxima):
+    def __init__(self, nombre: str, ubicacion: str, capacidad_maxima: int):
         self._validar_pais(ubicacion)
         self.nombre = nombre
         self.ubicacion = ubicacion
@@ -56,8 +57,11 @@ class Puerto:
 
 
 
-puertos_registrados = [
-    Puerto("Puerto de San Antonio", "Chile", 10),
-    Puerto("Puerto de Valparaíso", "Chile", 7),
-    Puerto("Puerto de Róterdam", "Holanda", 15)
-]
+puertos_registrados = []
+producto = Alimento("Manzanas", 100, 10000, True)
+contenedor = Contenedor("C-101", "Refrigerado")
+contenedor.agregar_producto(producto)
+puerto = Puerto("Puerto de San Antonio", "Chile", 50)
+puerto.agregar_contenedor(contenedor)
+puertos_registrados.append(puerto)
+

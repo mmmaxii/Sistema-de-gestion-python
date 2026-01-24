@@ -1,6 +1,6 @@
 # Clase padre
 class Producto:
-    def __init__(self, nombre, peso, precio):
+    def __init__(self, nombre: str, peso: int, precio: int):
         self.nombre = nombre
         self.peso = peso
         self.precio = precio
@@ -16,7 +16,7 @@ class Producto:
 
 
 class Alimento(Producto):
-    def __init__(self, nombre, peso, precio, requiere_frio):
+    def __init__(self, nombre: str, peso: int, precio: int, requiere_frio:  bool):
         super().__init__(nombre, peso, precio) 
         self.requiere_frio = requiere_frio
     
@@ -31,7 +31,7 @@ class Alimento(Producto):
 
 
 class Tecnologia(Producto):
-    def __init__(self, nombre, peso, precio, marca):
+    def __init__(self, nombre: str, peso: int, precio: int, marca: str):
         super().__init__(nombre, peso, precio)
         self.marca = marca
 
@@ -46,7 +46,7 @@ class Tecnologia(Producto):
 
 
 class Vehiculo(Producto):
-    def __init__(self, nombre, peso, precio, marca, año):
+    def __init__(self, nombre: str, peso: int, precio: int, marca: str, año: int):
         super().__init__(nombre, peso, precio)
         self.marca = marca
         self.año = año

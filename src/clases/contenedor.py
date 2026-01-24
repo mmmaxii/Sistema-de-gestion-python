@@ -1,4 +1,4 @@
-from .productos import Alimento, Tecnologia, ArticulosDomestico, Vehiculo
+from .productos import Alimento, Tecnologia, Vehiculo
 
 class Contenedor:
     def __init__(self, id_contenedor, tipo_contenedor):
@@ -31,9 +31,7 @@ class Contenedor:
                 print(f"ERROR: ¡El vehiculo {producto.nombre} se va a dañar! Necesita contenedor OpenTop.")
                 return False
         
-    
-            
-        
+
         self.carga.append(producto)
         print(f"Producto {producto.nombre} agregado con éxito.")
         return True

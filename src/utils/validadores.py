@@ -9,6 +9,7 @@ def verificar_input_entero(input_usuario, rango):
             time.sleep(1)
             return None
         return input_usuario
+        
     except ValueError:
         print("Error: Debes ingresar un numero entero.")
         time.sleep(1)

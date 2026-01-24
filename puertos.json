@@ -1,0 +1,30 @@
+[
+    {
+        "nombre": "Puerto de San Antonio",
+        "ubicacion": "Chile",
+        "capacidad_maxima": 5,
+        "contenedores": [
+            {
+                "id": "CONT-001",
+                "tipo": "Refrigerado",
+                "peso_maximo": 29000,
+                "carga": [
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Salmon",
+                        "peso": 500,
+                        "precio": 3000,
+                        "requiere_frio": true
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Notebook",
+                        "peso": 2500,
+                        "precio": 800000,
+                        "marca": "Lenovo"
+                    }
+                ]
+            }
+        ]
+    }
+]
