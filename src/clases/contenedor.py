@@ -5,9 +5,12 @@ class Contenedor:
         self.id = id_contenedor
         self.tipo = tipo_contenedor  # Refrigerado, Seco, OpenTop
         self.carga = []  
-        self.peso_maximo = 29000 #kg
+        self.peso_maximo = 100000 #kg
+        self.peso_actual = self.calcular_peso_actual()
 
-    
+    def calcular_peso_actual(self):
+        return sum(producto.peso for producto in self.carga)
+
     def __str__(self):
         return f"{self.id} - {self.tipo} - {self.peso_actual}/{self.peso_maximo} kg"
 

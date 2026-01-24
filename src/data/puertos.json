@@ -1,31 +1,8 @@
 [
     {
-        "nombre": "Puerto de San Antonio",
+        "nombre": "Puerto San Lorenzo",
         "ubicacion": "Chile",
-        "capacidad_maxima": 1,
-        "contenedores": [
-            {
-                "id": "CONT-001",
-                "tipo": "OpenTop",
-                "peso_maximo": 29000,
-                "carga": [
-                    {
-                        "tipo": "Tecnologia",
-                        "nombre": "Notebook",
-                        "peso": 2500,
-                        "precio": 800000,
-                        "marca": "Lenovo"
-                    },
-                    {
-                        "tipo": "Vehiculo",
-                        "nombre": "Motocicleta",
-                        "peso": 180000,
-                        "precio": 2500000,
-                        "marca": "Yamaha",
-                        "año": 2022
-                    }
-                ]
-            }
-        ]
+        "capacidad_maxima": 99,
+        "contenedores": []
     }
 ]

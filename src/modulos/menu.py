@@ -60,26 +60,31 @@ def menu_principal(puertos_en_curso):
             # Luego me metere en la logica de eliminar puertos
             decoradores.cambio_de_pagina()
             print("\n--- ELIMINAR PUERTO ---")
-            print("\nLista de puertos:")
+            paises_disponibles = sorted({p.ubicacion for p in puertos_en_curso})
+            print(f"Países con puertos registrados: {', '.join(paises_disponibles)}")
+            ubicacion_buscada = input("Ingrese la ubicación para filtrar puertos: ")
+            puertos_en_ubicacion = [p for p in puertos_en_curso if p.ubicacion.lower() == ubicacion_buscada.lower()]
 
-            for puerto in puertos_en_curso:
-                print(puerto)
-                time.sleep(0.3)
+            if not puertos_en_ubicacion:
+                print(f"\nNo hay puertos registrados en la ubicación: {ubicacion_buscada}.")
+                time.sleep(1)
+            else:
+                print(f"\nPuertos encontrados en {ubicacion_buscada}:")
+                for p in puertos_en_ubicacion:
+                    print(f"- {p.nombre}")
+                    time.sleep(0.2)
+                
+                nombre_a_eliminar = input("\nIngrese el nombre del puerto que desea eliminar: ")
+                puerto_a_borrar = next((p for p in puertos_en_ubicacion if p.nombre.lower() == nombre_a_eliminar.lower()), None)
 
-            ubicacion_a_eliminar = input("Ingrese la ubicacion del puerto: ")
-
-            for puerto_a_eliminar in puertos_en_curso:
-                if puerto_a_eliminar.ubicacion == ubicacion_a_eliminar:
-                    puertos_en_curso.remove(puerto_a_eliminar)
-                    print(f"\nPuerto {puerto_a_eliminar.nombre} eliminado exitosamente.")
-                    time.sleep(0.5)
-                    input("\nPresione ENTER para volver al menú...")
-                    break
+                if puerto_a_borrar:
+                    puertos_en_curso.remove(puerto_a_borrar)
+                    print(f"\nEl puerto '{puerto_a_borrar.nombre}' ha sido eliminado exitosamente.")
                 else:
-                    print("\nNo existen puertos en esta ubicación.")
-                    time.sleep(1)
-                    input("\nPresione ENTER para volver al menú...")
-                    break
+                    print(f"\nNo se encontró ningún puerto con el nombre '{nombre_a_eliminar}' en esa ubicación.")
+                
+                input("\nPresione ENTER para volver al menú...")
+                pass
 
         elif opcion == 4:
             
