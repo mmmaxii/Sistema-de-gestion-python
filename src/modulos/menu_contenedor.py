@@ -1,6 +1,6 @@
 from utils import decoradores
-from utils.generadores import generar_producto_general
 from utils.generadores import eliminar_producto_random
+from utils.generadores import agregar_productos_aleatorios
 import time
 
 def menu_contenedores(puerto):
@@ -71,35 +71,3 @@ def menu_contenedor_individual(contenedor):
             eliminar_producto_random(contenedor)
 
 
-def agregar_productos_aleatorios(contenedor):
-    try:
-        cantidad = int(input("¿Cuántos productos desea agregar?: "))
-
-        if cantidad <= 0:
-            print("❌ La cantidad debe ser mayor a 0.")
-            input("ENTER para continuar...")
-            return
-
-    except ValueError:
-        print("❌ Ingrese un número válido.")
-        input("ENTER para continuar...")
-        return
-
-    agregados = 0
-
-    for _ in range(cantidad):
-        # Verificar si ya está lleno antes de intentar
-        if contenedor.peso_actual >= contenedor.peso_maximo:
-            print("\n⚠ El contenedor ha alcanzado su capacidad máxima de peso. Deteniendo...")
-            break
-
-        producto = generar_producto_general()
-
-        if contenedor.agregar_producto(producto):
-            agregados += 1
-
-    if agregados == 0:
-        print("\n⚠ No se agregaron productos.")
-    else:
-        print(f"\n✅ Proceso completado. Se agregaron {agregados} de {cantidad} productos intentados.")
-    input("ENTER para continuar...")

@@ -8,12 +8,14 @@ producto. Encontrado el 26/01/2026.
 
 2. Incorporar una funcionalidad para eliminar productos de un contenedor que sea de manera aleatoria. Encontrado el 26/01/2026.
 
-- Funcionalidad sin incorporar.
-
+- Funcionalidad incorporada el 28/01/2026 00:23 
 
 
 3. UI agregar lim de cuantos contenedores caen en un puerto. Encontrado el 26/01/2026.
 
+- Funcionalidad incorporada el 28/01/2026 00:25
+
+
+4. Bug donde se pueden agregar mas contenedores de los que un puerto puede soportar. Encontrado el 28/01/2026.
+
 - Funcionalidad sin incorporar
-
-

@@ -91,22 +91,79 @@ def generar_contenedor_random():
 
 
 
-def eliminar_producto_random(contenedor):
-    """
-    Elimina un producto al azar del inventario (carga) del contenedor.
-    """
-    if not contenedor.carga:
-        print("⚠ No hay productos para eliminar.")
+
+def agregar_productos_aleatorios(contenedor):
+    try:
+        cantidad = int(input("¿Cuántos productos desea agregar?: "))
+
+        if cantidad <= 0:
+            print("❌ La cantidad debe ser mayor a 0.")
+            input("ENTER para continuar...")
+            return
+
+    except ValueError:
+        print("❌ Ingrese un número válido.")
+        input("ENTER para continuar...")
         return
 
-    # Seleccionamos una llave (nombre de producto) al azar
-    nombre = random.choice(list(contenedor.carga.keys()))
-    
-    # Reducimos la cantidad en el inventario
-    contenedor.carga[nombre] -= 1
-    
-    # Si la cantidad llega a 0, eliminamos la entrada del diccionario
-    if contenedor.carga[nombre] <= 0:
-        del contenedor.carga[nombre]
-    
-    print(f"🗑 Producto {nombre} eliminado.")
+    agregados = 0
+
+    for _ in range(cantidad):
+        # Verificar si ya está lleno antes de intentar
+        if contenedor.peso_actual >= contenedor.peso_maximo:
+            print("\n⚠ El contenedor ha alcanzado su capacidad máxima de peso. Deteniendo...")
+            break
+
+        producto = generar_producto_general()
+
+        if contenedor.agregar_producto(producto):
+            agregados += 1
+
+    if agregados == 0:
+        print("\n⚠ No se agregaron productos.")
+    else:
+        print(f"\n✅ Proceso completado. Se agregaron {agregados} de {cantidad} productos intentados.")
+    input("ENTER para continuar...")
+
+
+
+def eliminar_producto_random(contenedor):
+    try:
+        cantidad = int(input("¿Cuántos productos desea eliminar?: "))
+
+        if cantidad <= 0:
+            print("❌ La cantidad debe ser mayor a 0.")
+            input("ENTER para continuar...")
+            return
+
+    except ValueError:
+        print("❌ Ingrese un número válido.")
+        input("ENTER para continuar...")
+        return
+
+    eliminados = 0
+
+    for _ in range(cantidad):
+        # Validación: detener si ya no hay productos
+        if not contenedor.carga:
+            print("\n⚠ No hay más productos para eliminar. Deteniendo...")
+            break
+
+        # Seleccionamos una llave (nombre de producto) al azar
+        nombre = random.choice(list(contenedor.carga.keys()))
+        
+        # Reducimos la cantidad en el inventario
+        contenedor.carga[nombre]["cantidad"] -= 1
+        
+        # Si la cantidad llega a 0, eliminamos la entrada del diccionario
+        if contenedor.carga[nombre]["cantidad"] <= 0:
+            del contenedor.carga[nombre]
+        
+        eliminados += 1
+        print(f"🗑 Producto {nombre} eliminado.")
+
+    if eliminados == 0:
+        print("\n⚠ No se eliminaron productos.")
+    else:
+        print(f"\n✅ Proceso completado. Se eliminaron {eliminados} de {cantidad} productos intentados.")
+    input("ENTER para continuar...")

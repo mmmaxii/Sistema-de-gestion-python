@@ -1505,6 +1505,12 @@
                         "cantidad": 59
                     }
                 ]
+            },
+            {
+                "id": "CS006",
+                "tipo": "Seco",
+                "peso_maximo": 100000,
+                "carga": []
             }
         ]
     },
@@ -3338,7 +3344,7 @@
                         "peso": 28.0,
                         "precio": 450,
                         "marca": "Secretlab",
-                        "cantidad": 3
+                        "cantidad": 2
                     },
                     {
                         "tipo": "Tecnologia",
@@ -4116,22 +4122,6 @@
                     },
                     {
                         "tipo": "Tecnologia",
-                        "nombre": "Cerradura Inteligente",
-                        "peso": 1.5,
-                        "precio": 250,
-                        "marca": "Yale",
-                        "cantidad": 1
-                    },
-                    {
-                        "tipo": "Alimento",
-                        "nombre": "Uvas (Caja)",
-                        "peso": 0.5,
-                        "precio": 2.5,
-                        "requiere_frio": true,
-                        "cantidad": 1
-                    },
-                    {
-                        "tipo": "Tecnologia",
                         "nombre": "Bose QuietComfort 45",
                         "peso": 0.24,
                         "precio": 330,
@@ -4168,7 +4158,71 @@
                         "peso": 0.3,
                         "precio": 130,
                         "marca": "Google",
-                        "cantidad": 2
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Fresas (Paquete)",
+                        "peso": 0.4,
+                        "precio": 3.0,
+                        "requiere_frio": true,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Alimento",
+                        "nombre": "Harina de Trigo",
+                        "peso": 1.0,
+                        "precio": 1.1,
+                        "requiere_frio": false,
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "iMac 24",
+                        "peso": 4.5,
+                        "precio": 1500,
+                        "marca": "Apple",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Purificador de Aire",
+                        "peso": 4.8,
+                        "precio": 250,
+                        "marca": "Xiaomi",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "ASUS ROG Strix",
+                        "peso": 2.5,
+                        "precio": 1800,
+                        "marca": "ASUS",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Steam Deck OLED",
+                        "peso": 0.64,
+                        "precio": 550,
+                        "marca": "Valve",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Air Fryer XXL",
+                        "peso": 6.5,
+                        "precio": 180,
+                        "marca": "Philips",
+                        "cantidad": 1
+                    },
+                    {
+                        "tipo": "Tecnologia",
+                        "nombre": "Router Starlink V2",
+                        "peso": 4.2,
+                        "precio": 600,
+                        "marca": "SpaceX",
+                        "cantidad": 1
                     }
                 ]
             },
