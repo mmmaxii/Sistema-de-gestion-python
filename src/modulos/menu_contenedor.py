@@ -1,7 +1,6 @@
 from utils import decoradores
 from utils.generadores import eliminar_producto_random
 from utils.generadores import agregar_productos_aleatorios
-import time
 
 def menu_contenedores(puerto):
     while True:

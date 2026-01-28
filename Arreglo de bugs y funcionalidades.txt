@@ -22,8 +22,8 @@ producto. Encontrado el 26/01/2026.
 
 5. UI agregar una explicacion para la opcion de agregar puerto, ya que existe una validacion que no se muestra en la UI. Encontrado el 28/01/2026.
 
-- Funcionalidad sin incorporar
+- Funcionalidad incorporada el 28/01/2026 00:43
 
 6. UI mejorar la experiencia para eliminar un puerto. Encontrado el 28/01/2026.
 
-- Funcionalidad sin incorporar
+- Funcionalidad incorporada el 28/01/2026 00:37

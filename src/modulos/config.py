@@ -2,7 +2,7 @@
 
 PAISES_COSTEROS = {
     "Chile", "Perú", "Ecuador", "Colombia", "Venezuela",
-    "Argentina", "Uruguay", "Brasil", "Guyana", "Surinam",
+    "Puerto Rico", "Argentina", "Uruguay", "Brasil", "Guyana", "Surinam",
     "Panamá", "Costa Rica", "Nicaragua", "Honduras", "Holanda", "El Salvador",
     "Guatemala", "México", "Canadá", "Estados Unidos",
     "Cuba", "Haití", "República Dominicana", "Jamaica",

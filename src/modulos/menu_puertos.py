@@ -100,7 +100,7 @@ def menu_ver_puertos(puertos):
 
         try:
             time.sleep(1)
-            opcion = int(input("\nSeleccione un puerto: "))
+            opcion = int(input("\nSeleccione un puerto para interactuar: "))
 
             if opcion == 0:
                 return

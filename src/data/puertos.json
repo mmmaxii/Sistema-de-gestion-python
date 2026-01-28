@@ -2753,37 +2753,6 @@
     {
         "nombre": "Pilapichu",
         "ubicacion": "China",
-        "capacidad_maxima": null,
-        "contenedores": [
-            {
-                "id": "CR006",
-                "tipo": "Refrigerado",
-                "peso_maximo": 100000,
-                "carga": []
-            },
-            {
-                "id": "CO002",
-                "tipo": "OpenTop",
-                "peso_maximo": 100000,
-                "carga": []
-            },
-            {
-                "id": "CS002",
-                "tipo": "Seco",
-                "peso_maximo": 100000,
-                "carga": []
-            },
-            {
-                "id": "CO011",
-                "tipo": "OpenTop",
-                "peso_maximo": 100000,
-                "carga": []
-            }
-        ]
-    },
-    {
-        "nombre": "Pilapichu",
-        "ubicacion": "China",
         "capacidad_maxima": 98,
         "contenedores": []
     }
