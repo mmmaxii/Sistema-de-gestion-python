@@ -17,10 +17,10 @@ def menu_principal(puertos_en_curso):
         print(" 1. Ver puertos")
         print(" 2. Agregar puerto")
         print(" 3. Eliminar puerto")
-        print(" 4. Salir")
+        print(" 0. Salir")
         print("-" * 30)
 
-        opcion = verificar_input_entero(input("Ingrese una opcion: "), rango = range(1,5))
+        opcion = verificar_input_entero(input("Ingrese una opcion: "), rango = range(0,4))
 
         if opcion == 1:
             menu_ver_puertos(puertos_en_curso)
@@ -76,7 +76,7 @@ def menu_principal(puertos_en_curso):
                 input("\nPresione ENTER para volver al menú...")
                 pass
 
-        elif opcion == 4:
+        elif opcion == 0:
             
             decoradores.despedida_programa()
             return puertos_en_curso

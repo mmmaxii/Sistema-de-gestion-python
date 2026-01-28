@@ -19,3 +19,11 @@ producto. Encontrado el 26/01/2026.
 4. Bug donde se pueden agregar mas contenedores de los que un puerto puede soportar. Encontrado el 28/01/2026.
 
 - Funcionalidad sin incorporar
+
+5. UI agregar una explicacion para la opcion de agregar puerto, ya que existe una validacion que no se muestra en la UI. Encontrado el 28/01/2026.
+
+- Funcionalidad sin incorporar
+
+6. UI mejorar la experiencia para eliminar un puerto. Encontrado el 28/01/2026.
+
+- Funcionalidad sin incorporar
