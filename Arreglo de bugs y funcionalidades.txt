@@ -3,7 +3,7 @@ Este documento lo estoy haciendo posterior al dia 25/01/2026.
 1. En la opcion de modificar contenedor dentro de un puerto, aperece la cantidad de productos, pero no cuenta el hecho de que existen N de 1 mismo 
 producto. Encontrado el 26/01/2026.
 
-- Bug sin arreglar.
+- Arreglado el 28/01/2026 00:13
 
 
 2. Incorporar una funcionalidad para eliminar productos de un contenedor que sea de manera aleatoria. Encontrado el 26/01/2026.
@@ -16,4 +16,4 @@ producto. Encontrado el 26/01/2026.
 
 - Funcionalidad sin incorporar
 
-w
+

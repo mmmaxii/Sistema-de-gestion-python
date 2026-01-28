@@ -1,5 +1,6 @@
 from utils import decoradores
 from utils.generadores import generar_producto_general
+from utils.generadores import eliminar_producto_random
 import time
 
 def menu_contenedores(puerto):
@@ -40,7 +41,7 @@ def menu_contenedor_individual(contenedor):
         decoradores.titulo_menu(f"CONTENEDOR {contenedor.id}")
         
         print(f" Tipo: {contenedor.tipo}")
-        print(f" Carga actual: {len(contenedor.carga)} productos")
+        print(f" Carga actual: {contenedor.calcular_cantidad_productos()} productos")
         print("-" * 30)
 
         if contenedor.carga:
@@ -54,6 +55,7 @@ def menu_contenedor_individual(contenedor):
 
         print("-" * 30)
         print(" 1. Agregar productos aleatorios")
+        print(" 2. Eliminar productos aleatorios")
         print(" 0. Volver")
         print("-" * 30)
 
@@ -64,6 +66,9 @@ def menu_contenedor_individual(contenedor):
 
         if opcion == "1":
             agregar_productos_aleatorios(contenedor)
+
+        if opcion == "2":
+            eliminar_producto_random(contenedor)
 
 
 def agregar_productos_aleatorios(contenedor):

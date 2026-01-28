@@ -88,3 +88,25 @@ def generar_contenedor_random():
     
     # 3. Retornamos la instancia
     return Contenedor(id_contenedor=id_seleccionado, tipo_contenedor=tipo_seleccionado)
+
+
+
+def eliminar_producto_random(contenedor):
+    """
+    Elimina un producto al azar del inventario (carga) del contenedor.
+    """
+    if not contenedor.carga:
+        print("⚠ No hay productos para eliminar.")
+        return
+
+    # Seleccionamos una llave (nombre de producto) al azar
+    nombre = random.choice(list(contenedor.carga.keys()))
+    
+    # Reducimos la cantidad en el inventario
+    contenedor.carga[nombre] -= 1
+    
+    # Si la cantidad llega a 0, eliminamos la entrada del diccionario
+    if contenedor.carga[nombre] <= 0:
+        del contenedor.carga[nombre]
+    
+    print(f"🗑 Producto {nombre} eliminado.")

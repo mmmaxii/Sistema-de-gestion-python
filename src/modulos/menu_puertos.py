@@ -88,11 +88,12 @@ def menu_ver_puertos(puertos):
         decoradores.cambio_de_pagina()
         decoradores.titulo_menu("LISTA DE PUERTOS")
 
-        print(f"{'No.':<5} {'Nombre':<25} {'Ubicación':<15}")
-        print("-" * 45)
+        print(f"{'No.':<5} {'Nombre':<20} {'Ubicación':<15} {'Contenedores':<15}")
+        print("-" * 60)
         for i, puerto in enumerate(puertos, start=1):
             time.sleep(0.1)
-            print(f"{i:<5} {puerto.nombre:<25} {puerto.ubicacion:<15}")
+            info_contenedores = f"{len(puerto.contenedores)}/{puerto.capacidad_maxima}"
+            print(f"{i:<5} {puerto.nombre:<20} {puerto.ubicacion:<15} {info_contenedores:<15}")
         
         print("\n 0. Volver al menú principal")
         print("-" * 30)

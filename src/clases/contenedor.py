@@ -13,6 +13,12 @@ class Contenedor:
         for item in self.carga.values():
             total += item["producto"].peso * item["cantidad"]
         return total
+    
+    def calcular_cantidad_productos(self):
+        total = 0
+        for item in self.carga.values():
+            total += item["cantidad"]
+        return total
 
     def __str__(self):
         # Recalcular peso actual al mostrar para asegurar consistencia
