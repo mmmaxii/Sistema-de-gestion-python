@@ -2755,5 +2755,24 @@
         "ubicacion": "China",
         "capacidad_maxima": 98,
         "contenedores": []
+    },
+    {
+        "nombre": "que oasa",
+        "ubicacion": "España",
+        "capacidad_maxima": 1,
+        "contenedores": [
+            {
+                "id": "CR009",
+                "tipo": "Refrigerado",
+                "peso_maximo": 100000,
+                "carga": []
+            },
+            {
+                "id": "CS020",
+                "tipo": "Seco",
+                "peso_maximo": 100000,
+                "carga": []
+            }
+        ]
     }
 ]

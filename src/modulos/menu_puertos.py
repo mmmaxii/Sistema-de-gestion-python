@@ -53,8 +53,7 @@ def menu_ver_contenedores(puerto):
 
         if opcion == "1":
             nuevo = generar_contenedor_random()
-            puerto.contenedores.append(nuevo)
-            print(f"\n✅ Contenedor {nuevo.id} agregado exitosamente.")
+            puerto.agregar_contenedor(nuevo)
             time.sleep(1)
 
         elif opcion == "2":
