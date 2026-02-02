@@ -113,7 +113,7 @@ Esta clase maneja toda la lógica de entrada/salida:
 2.  **Gestión de Contenedores**:
     - Ver contenedores de un puerto (ID, Tipo, Peso Max, **Peso Actual**).
     - **Agregar Contenedor**: 
-        - Generación automática o manual.
+        - Generación automática.
         - Validación de capacidad del puerto (impide agregar si está lleno).
     - **Modificar Contenedor**:
         - Acceder a un contenedor específico.
