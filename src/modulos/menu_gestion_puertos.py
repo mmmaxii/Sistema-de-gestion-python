@@ -5,6 +5,10 @@ from utils.validadores import verificar_input_entero, verificar_pais_costeros
 from clases.puertos import Puerto
 
 def menu_eliminar_puerto(puertos):
+    """
+    Elimina un puerto del sistema, gestiona errores de indice fuera de rango 
+    y de valor no valido
+    """
     while True:
         decoradores.cambio_de_pagina()
         decoradores.titulo_menu("ELIMINAR PUERTO")
@@ -32,6 +36,8 @@ def menu_eliminar_puerto(puertos):
                 return
 
             if 1 <= opcion <= len(puertos):
+                # Se elimina el puerto seleccionado, ya que los indices de python empiezan
+                # desde el 0, le resto 1 a la opcion elegida para obtener el indice correcto.
                 puerto_a_eliminar = puertos[opcion - 1]
                 
                 print(f"\n¿Seguro que quieres eliminar el puerto: {puerto_a_eliminar.nombre}, ubicado en {puerto_a_eliminar.ubicacion}?")
@@ -83,16 +89,16 @@ def menu_agregar_puerto(puertos):
 
         # Finalmente no utilice la funcion verificar_pais_costeros, pero la deje por si acaso.
         # La logica de verificacion esta en la clase puerto.
-        if verificar_pais_costeros(ubicacion):
-            capacidad_maxima = verificar_input_entero(input("Ingrese la capacidad máxima del puerto (1-100): "), rango=range(1, 101))
-            
-            if capacidad_maxima:
-                puerto = Puerto(nombre, ubicacion, capacidad_maxima)
-                puertos.append(puerto)
-                print(f"\n✅ Puerto '{nombre}' en {ubicacion} agregado exitosamente.")
-                time.sleep(1.5)
-                return
-        else:
-            print("\n❌ El país no es costero o está mal escrito. Intente nuevamente.")
-            time.sleep(1.5)
+        #if verificar_pais_costeros(ubicacion):
+        #    capacidad_maxima = verificar_input_entero(input("Ingrese la capacidad máxima del puerto (1-100): "), rango=range(1, 101))
+        #    
+        #    if capacidad_maxima:
+        #        puerto = Puerto(nombre, ubicacion, capacidad_maxima)
+        #        puertos.append(puerto)
+        #        print(f"\n✅ Puerto '{nombre}' en {ubicacion} agregado exitosamente.")
+        #        time.sleep(1.5)
+        #        return
+        #else:
+        #    print("\n❌ El país no es costero o está mal escrito. Intente nuevamente.")
+        #    time.sleep(1.5)
 

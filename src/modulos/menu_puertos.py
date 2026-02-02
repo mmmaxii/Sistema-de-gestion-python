@@ -4,6 +4,10 @@ from utils.generadores import generar_contenedor_random
 from .menu_contenedor import menu_contenedor_individual
 
 def eliminar_contenedor(puerto):
+    """
+    Elimina un contenedor del puerto, gestiona errores de indice fuera de rango 
+    y de valor no valido
+    """
     if not puerto.contenedores:
         print("⚠ No hay contenedores para eliminar.")
         time.sleep(1)
@@ -25,6 +29,11 @@ def eliminar_contenedor(puerto):
 
 
 def menu_ver_contenedores(puerto):
+    """
+    Muestra los contenedores del puerto, gestiona errores de indice fuera de rango 
+    y de valor no valido
+    """
+
     while True:
         decoradores.cambio_de_pagina()
         decoradores.titulo_menu(f"CONTENEDORES EN {puerto.nombre.upper()}")
@@ -52,6 +61,8 @@ def menu_ver_contenedores(puerto):
             return
 
         if opcion == "1":
+            # Se genera un contenedor aleatorio mediante la funcion de la clase ya que la misma verifica
+            # si el puerto tiene capacidad para agregar el contenedor.
             nuevo = generar_contenedor_random()
             puerto.agregar_contenedor(nuevo)
             time.sleep(1)
@@ -83,6 +94,10 @@ def menu_ver_contenedores(puerto):
 
 
 def menu_ver_puertos(puertos):
+    """
+    Muestra los puertos del sistema, gestiona errores de indice fuera de rango 
+    y de valor no valido
+    """
     while True:
         decoradores.cambio_de_pagina()
         decoradores.titulo_menu("LISTA DE PUERTOS")

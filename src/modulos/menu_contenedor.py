@@ -3,6 +3,10 @@ from utils.generadores import eliminar_producto_random
 from utils.generadores import agregar_productos_aleatorios
 
 def menu_contenedores(puerto):
+    """
+    Muestra los contenedores del puerto, gestiona errores de indice fuera de rango 
+    y de valor no valido
+    """
     while True:
         decoradores.cambio_de_pagina()
         decoradores.titulo_menu(f"CONTENEDORES EN {puerto.nombre.upper()}")
@@ -35,6 +39,10 @@ def menu_contenedores(puerto):
 
 
 def menu_contenedor_individual(contenedor):
+    """
+    Muestra los productos del contenedor, gestiona errores de indice fuera de rango 
+    y de valor no valido
+    """
     while True:
         decoradores.cambio_de_pagina()
         decoradores.titulo_menu(f"CONTENEDOR {contenedor.id}")
@@ -43,6 +51,7 @@ def menu_contenedor_individual(contenedor):
         print(f" Carga actual: {contenedor.calcular_cantidad_productos()} productos")
         print("-" * 30)
 
+        
         if contenedor.carga:
             print(" 📦 Productos:")
             for item in contenedor.carga.values():

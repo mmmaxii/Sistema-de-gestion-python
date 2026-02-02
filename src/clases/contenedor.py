@@ -26,6 +26,9 @@ class Contenedor:
         return f"📦 {self.id} - {self.tipo} - {self.peso_actual}/{self.peso_maximo} kg"
 
     def to_dict(self):
+        """
+        Convierte el contenedor a un diccionario para guardarlo en un archivo JSON.
+        """
         lista_carga = []
         for item in self.carga.values():
             prod_dict = item["producto"].to_dict()

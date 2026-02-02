@@ -6,6 +6,9 @@ class Producto:
         self.precio = precio
     
     def to_dict(self):
+        """
+        Convierte el producto a un diccionario para guardarlo en un archivo JSON.
+        """
         return {
             "tipo": self.__class__.__name__,
             "nombre": self.nombre,
@@ -27,6 +30,7 @@ class Alimento(Producto):
             return f"{self.nombre} - {self.peso} kg - ${self.precio} - No requiere frío"
     
     def to_dict(self):
+        # Ya que la clase padre tiene incorporada la funcion to_dict, solo incorporamos lo nuevo.
         data = super().to_dict()
         data["requiere_frio"] = self.requiere_frio
         return data 
@@ -42,6 +46,7 @@ class Tecnologia(Producto):
         return f"{self.nombre} - {self.peso} kg - ${self.precio} - {self.marca}"
 
     def to_dict(self):
+        # Ya que la clase padre tiene incorporada la funcion to_dict, solo incorporamos lo nuevo.
         data = super().to_dict()
         data["marca"] = self.marca
         return data 
@@ -58,6 +63,7 @@ class Vehiculo(Producto):
         return f"{self.nombre} - {self.peso} kg - ${self.precio} - {self.marca} - {self.año}"
 
     def to_dict(self):
+        # Ya que la clase padre tiene incorporada la funcion to_dict, solo incorporamos lo nuevo.
         data = super().to_dict()
         data["marca"] = self.marca
         data["año"] = self.año

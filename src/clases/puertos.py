@@ -27,6 +27,9 @@ class Puerto:
         return f"⚓ {self.nombre} ({self.ubicacion}) - Ocupación: {len(self.contenedores)}/{self.capacidad_maxima}"
 
     def to_dict(self):
+        """
+        Convierte el puerto a un diccionario para guardarlo en un archivo JSON.
+        """
         return {
             "nombre": self.nombre,
             "ubicacion": self.ubicacion,
