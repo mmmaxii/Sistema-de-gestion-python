@@ -19,6 +19,7 @@ src/
 │   ├── menu.py
 │   ├── menu_puertos.py
 │   ├── menu_contenedor.py
+│   ├── menu_gestion_puertos.py
 │   └── config.py
 ├── repositorios/    # Capa de acceso a datos (Persistencia)
 │   └── repositorios_puerto.py
@@ -39,6 +40,7 @@ El sistema se basa en clases que representan las entidades del negocio:
 - Representa un puerto marítimo.
 - **Atributos**: Nombre, Ubicación (validada contra lista de países costeros), Capacidad Máxima y Lista de Contenedores.
 - **Métodos**: `agregar_contenedor()`, `to_dict()`.
+- **Validaciones**: Control estricto de capacidad máxima de contenedores para evitar sobrecarga.
 
 ### 2. `Contenedor` (`src/clases/contenedor.py`)
 - Representa un contenedor de carga.
@@ -77,14 +79,21 @@ Mejoran la experiencia de usuario (UX):
 
 ---
 
-## 💾 Persistencia de Datos
+El sistema utiliza **JSON** para guardar el estado completo entre ejecuciones. Dado que JSON no soporta objetos complejos (instancias de clases) nativamente, se implementó una estrategia de serialización manual:
 
-El sistema utiliza **JSON** para guardar el estado completo entre ejecuciones:
+### Estrategia de Serialización (`to_dict`)
+Cada clase del sistema (`Puerto`, `Contenedor`, `Producto`) cuenta con un método `to_dict()` que convierte sus atributos en un diccionario estándar de Python.
+- **Recursividad**: La conversión es recursiva. Al guardar un puerto, este invoca `to_dict()` en sus contenedores, y cada contenedor invoca `to_dict()` en sus productos.
+- **Carga de Datos**: El proceso inverso ocurre al iniciar el programa. El repositorio lee el JSON y reconstruye los objetos instanciando las clases con los datos del diccionario.
 
-- **Repositorio** (`src/repositorios/repositorios_puerto.py`):
-    - Se encarga de **Cargar** datos desde `data/puertos.json`.
-    - Transforma los diccionarios JSON nuevamente en objetos Python (`Puerto`, `Contenedor`, `Producto`).
-    - Se encarga de **Guardar** los objetos actuales en el archivo JSON.
+### Clase `RepositorioPuertos` (`src/repositorios/repositorios_puerto.py`)
+Esta clase maneja toda la lógica de entrada/salida:
+1.  **Guardado (`guardar`)**: Se ejecuta al cerrar una sesión o realizar cambios importantes, transformando la lista de objetos `Puerto` actual a JSON.
+2.  **Carga (`cargar`)**: Se ejecuta al iniciar el programa para restaurar el estado anterior.
+3.  **Seguridad (`security_check`)**:
+    - Si el archivo JSON no existe (primera ejecución) o está corrupto, se activa `security_check()`.
+    - Esta función **crea automáticamente un puerto por defecto** ("Puerto de San Antonio") con un contenedor y productos de muestra.
+    - Esto asegura que el programa **nunca falle al iniciar**, garantizando continuidad y permitiendo al usuario empezar a trabajar de inmediato sin configuraciones manuales previas.
 - **Compatibilidad**: Maneja la conversión automática entre el sistema de objetos y el formato de archivo.
 
 ---
@@ -93,15 +102,23 @@ El sistema utiliza **JSON** para guardar el estado completo entre ejecuciones:
 
 1.  **Gestión de Puertos**:
     - Ver lista de puertos con formato de tabla.
-    - Agregar nuevos puertos (con validación de país).
-    - Eliminar puertos (con filtro de búsqueda por ubicación).
+    - **Agregar Puerto**:
+        - Validación de país costero.
+        - **Explicación UI**: Instrucciones claras sobre los requisitos de ubicación.
+        - Definición de límite máximo de contenedores.
+    - **Eliminar Puerto**:
+        - Filtro de búsqueda por ubicación.
+        - UI mejorada para evitar errores.
 
 2.  **Gestión de Contenedores**:
     - Ver contenedores de un puerto (ID, Tipo, Peso Max, **Peso Actual**).
-    - **Agregar Contenedor**: Generación automática o manual.
+    - **Agregar Contenedor**: 
+        - Generación automática o manual.
+        - Validación de capacidad del puerto (impide agregar si está lleno).
     - **Modificar Contenedor**:
         - Acceder a un contenedor específico.
         - **Carga Masiva Inteligente**: Agregar X productos aleatorios.
+        - **Eliminación Aleatoria**: Funcionalidad para eliminar productos al azar del contenedor.
         - El sistema intenta llenar el contenedor hasta que se llene o ocurra un error de validación, sin detenerse por un solo fallo.
     - Eliminar Contenedor.
 

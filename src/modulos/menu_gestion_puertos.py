@@ -71,12 +71,18 @@ def menu_agregar_puerto(puertos):
             col_width = 25
             for i in range(0, len(paises_ordenados), 3):
                 row = paises_ordenados[i:i+3]
-                print("".join(word.ljust(col_width) for word in row))
+                
+                # Imprime los países alineados en columnas (ljust rellena con espacios a la derecha)
+                for pais in row:
+                    print(pais.ljust(col_width), end="")
+                print()
             
             print("-" * 60)
             input("\nPresione ENTER para continuar e ingresar la ubicación...")
             continue
 
+        # Finalmente no utilice la funcion verificar_pais_costeros, pero la deje por si acaso.
+        # La logica de verificacion esta en la clase puerto.
         if verificar_pais_costeros(ubicacion):
             capacidad_maxima = verificar_input_entero(input("Ingrese la capacidad máxima del puerto (1-100): "), rango=range(1, 101))
             
