@@ -2,7 +2,7 @@
 
 Bienvenido al **Sistema de Gestión Portuaria**, una aplicación de consola robusta diseñada en Python utilizando **Programación Orientada a Objetos (POO)**. Este sistema permite administrar puertos, contenedores y cargas de manera eficiente, con persistencia de datos y una interfaz de usuario amigable.
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 El proyecto está organizado modularmente para facilitar la escalabilidad y el mantenimiento:
 
@@ -32,7 +32,7 @@ src/
 
 ---
 
-## 🏗 Arquitectura y POO
+## Arquitectura y POO
 
 El sistema se basa en clases que representan las entidades del negocio:
 
@@ -61,19 +61,19 @@ El sistema se basa en clases que representan las entidades del negocio:
 
 ---
 
-## 🛠 Utilidades y Herramientas
+## Utilidades y Herramientas
 
-### ✅ Validadores (`src/utils/validadores.py`)
+### Validadores (`src/utils/validadores.py`)
 - `verificar_input_entero()`: Asegura que el usuario ingrese números válidos dentro de un rango.
 - `verificar_pais_costeros()`: Valida si una ubicación corresponde a un país costero permitido.
 
-### 🎨 Decoradores (`src/utils/decoradores.py`)
+### Decoradores (`src/utils/decoradores.py`)
 Mejoran la experiencia de usuario (UX):
 - `titulo_menu(texto)`: Estandariza los encabezados de todos los menús.
 - `cambio_de_pagina()`: Simula limpieza de pantalla y transiciones suaves.
 - `despedida_programa()`: Mensaje de cierre amigable.
 
-### 🎲 Generadores (`src/utils/generadores.py`)
+### Generadores (`src/utils/generadores.py`)
 - `generar_producto_general()`: Crea productos aleatorios (Alimento, Tecnología o Vehículo) con datos realistas.
 - `generar_contenedor_random()`: Crea contenedores con IDs y tipos aleatorios para pruebas rápidas.
 
@@ -98,7 +98,7 @@ Esta clase maneja toda la lógica de entrada/salida:
 
 ---
 
-## ✨ Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 1.  **Gestión de Puertos**:
     - Ver lista de puertos con formato de tabla.
@@ -130,7 +130,7 @@ Esta clase maneja toda la lógica de entrada/salida:
 
 ---
 
-## 🚀 Cómo Ejecutar
+## Cómo Ejecutar
 
 Requiere **Python 3**.
 
